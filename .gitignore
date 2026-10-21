@@ -4,5 +4,6 @@ __pycache__/
 .jupyter/
 .jupyter-data/
 .pytest_cache/
+.test-tmp*/
 .venv/
 *.py[cod]
