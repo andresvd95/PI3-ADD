@@ -1,0 +1,54 @@
+name: Ejecutar actividad Titanic
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ejecutar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: python -m pip install --upgrade pip -r requirements.txt
+
+      - name: Ejecutar pruebas
+        run: pytest -q
+
+      - name: Ejecutar notebook
+        run: >-
+          jupyter nbconvert
+          --to notebook
+          --execute actividad_titanic.ipynb
+          --output actividad_titanic_ejecutado.ipynb
+          --ExecutePreprocessor.timeout=300
+
+      - name: Verificar resumen generado
+        shell: bash
+        run: |
+          test -s resumen_titanic.txt
+          git diff --exit-code -- resumen_titanic.txt
+
+      - name: Guardar resultados de la ejecución
+        uses: actions/upload-artifact@v4
+        with:
+          name: actividad-titanic-ejecutada
+          path: |
+            actividad_titanic_ejecutado.ipynb
+            resumen_titanic.txt
