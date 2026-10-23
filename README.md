@@ -37,6 +37,8 @@ las celdas en orden.
 
 El workflow **Ejecutar actividad Titanic** se activa con cada cambio enviado a
 `main`, en los pull requests y manualmente desde la pestaña **Actions**. Ejecuta
-las pruebas, procesa el notebook y verifica los dos archivos. Para descargarlos,
-abre la ejecución en **Actions** y selecciona `actividad-titanic-ejecutada` en
-la sección **Artifacts**.
+las pruebas, procesa el notebook y verifica los dos archivos. Al terminar una
+ejecución en `main`, GitHub Actions añade o actualiza los archivos en el
+repositorio mediante un commit de `github-actions[bot]` si hay cambios. También
+pueden descargarse desde la ejecución en **Actions**, en **Artifacts** >
+`actividad-titanic-ejecutada`.
