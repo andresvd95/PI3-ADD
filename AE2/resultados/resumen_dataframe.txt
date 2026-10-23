@@ -1,0 +1,28 @@
+RESUMEN DEL DATAFRAME TITANIC
+============================
+Identificador del dataset: BIT/titanic-dataset
+Enlace: https://huggingface.co/datasets/BIT/titanic-dataset
+Fecha de consulta: 23 de octubre de 2026
+Split utilizado: train
+Muestra utilizada: no; se cargó el split completo
+Cantidad de filas: 891
+Cantidad de columnas: 15
+
+COLUMNAS TIPOS Y VALORES NULOS
+--------------------------------
+            tipo_dato  valores_nulos
+survived        int64              0
+pclass          int64              0
+sex               str              0
+age           float64            177
+sibsp           int64              0
+parch           int64              0
+fare          float64              0
+embarked          str              2
+class             str              0
+who               str              0
+adult_male       bool              0
+deck              str            688
+embark_town       str              2
+alive             str              0
+alone            bool              0
