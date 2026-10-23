@@ -1,4 +1,4 @@
-name: Ejecutar actividad Titanic
+name: Ejecutar actividades del proyecto
 
 on:
   push:
@@ -28,43 +28,60 @@ jobs:
       - name: Instalar dependencias
         run: python -m pip install --upgrade pip -r requirements.txt
 
-      - name: Ejecutar pruebas
-        run: python -m pytest -q
+      - name: Ejecutar pruebas de AE1
+        run: python -m pytest -q AE1/tests
 
       - name: Quitar resultados anteriores
-        run: rm -f resumen_titanic.txt titanic_transformado.csv
+        run: |
+          rm -f AE1/resultados/resumen_titanic.txt
+          rm -f AE1/resultados/titanic_transformado.csv
+          rm -f AE2/resultados/resumen_dataframe.txt
 
-      - name: Ejecutar notebook
+      - name: Ejecutar notebook de AE1
         run: >-
           jupyter nbconvert
           --to notebook
-          --execute actividad_titanic.ipynb
+          --execute AE1/notebooks/actividad_titanic.ipynb
+          --inplace
+          --ExecutePreprocessor.timeout=300
+
+      - name: Ejecutar notebook de AE2
+        run: >-
+          jupyter nbconvert
+          --to notebook
+          --execute AE2/notebooks/exploracion_titanic.ipynb
           --inplace
           --ExecutePreprocessor.timeout=300
 
       - name: Verificar archivos generados
         shell: bash
         run: |
-          test -s resumen_titanic.txt
-          test -s titanic_transformado.csv
-          python -c "import pandas as pd; df = pd.read_csv('titanic_transformado.csv'); assert df.shape == (891, 6), df.shape"
+          test -s AE1/resultados/resumen_titanic.txt
+          test -s AE1/resultados/titanic_transformado.csv
+          test -s AE2/resultados/resumen_dataframe.txt
+          python -c "import pandas as pd; df = pd.read_csv('AE1/resultados/titanic_transformado.csv'); assert df.shape == (891, 6), df.shape"
+          grep -q "Identificador del dataset: BIT/titanic-dataset" AE2/resultados/resumen_dataframe.txt
+          grep -q "Cantidad de filas: 891" AE2/resultados/resumen_dataframe.txt
+          grep -q "Cantidad de columnas: 15" AE2/resultados/resumen_dataframe.txt
 
       - name: Guardar resultados de la ejecución
         uses: actions/upload-artifact@v4
         with:
-          name: actividad-titanic-ejecutada
+          name: actividades-titanic-ejecutadas
           path: |
-            actividad_titanic.ipynb
-            resumen_titanic.txt
-            titanic_transformado.csv
+            AE1/notebooks/actividad_titanic.ipynb
+            AE1/resultados/
+            AE2/notebooks/exploracion_titanic.ipynb
+            AE2/resultados/
 
-      - name: Publicar archivos generados en main
+      - name: Publicar resultados generados en main
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add resumen_titanic.txt titanic_transformado.csv
+          git add AE1/notebooks/actividad_titanic.ipynb AE1/resultados
+          git add AE2/notebooks/exploracion_titanic.ipynb AE2/resultados
           if ! git diff --cached --quiet; then
-            git commit -m "Actualizar archivos generados del Titanic"
+            git commit -m "Actualizar resultados automáticos de AE1 y AE2"
             git push origin HEAD:main
           fi

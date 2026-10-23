@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-from dataset_summarizer import DatasetSummarizer
+from AE1.src.dataset_summarizer import DatasetSummarizer
 
 
 def test_build_summary_includes_shape_columns_and_nulls() -> None:

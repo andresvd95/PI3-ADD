@@ -1,8 +1,8 @@
 import pandas as pd
 import pytest
 
-import hf_dataset_loader
-from hf_dataset_loader import HFDatasetLoader
+from AE1.src import hf_dataset_loader
+from AE1.src.hf_dataset_loader import HFDatasetLoader
 
 
 class FakeDataset:
