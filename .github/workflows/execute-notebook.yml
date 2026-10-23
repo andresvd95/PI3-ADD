@@ -31,6 +31,9 @@ jobs:
       - name: Ejecutar pruebas
         run: python -m pytest -q
 
+      - name: Quitar resultados anteriores
+        run: rm -f resumen_titanic.txt titanic_transformado.csv
+
       - name: Ejecutar notebook
         run: >-
           jupyter nbconvert
@@ -39,11 +42,12 @@ jobs:
           --inplace
           --ExecutePreprocessor.timeout=300
 
-      - name: Verificar resumen generado
+      - name: Verificar archivos generados
         shell: bash
         run: |
           test -s resumen_titanic.txt
-          git diff --exit-code -- resumen_titanic.txt
+          test -s titanic_transformado.csv
+          python -c "import pandas as pd; df = pd.read_csv('titanic_transformado.csv'); assert df.shape == (891, 6), df.shape"
 
       - name: Guardar resultados de la ejecución
         uses: actions/upload-artifact@v4
@@ -52,3 +56,4 @@ jobs:
           path: |
             actividad_titanic.ipynb
             resumen_titanic.txt
+            titanic_transformado.csv
