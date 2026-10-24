@@ -7,6 +7,5 @@ __pycache__/
 .test-tmp*/
 .venv/
 *.py[cod]
-AE2/documento/*.docx
 AE2/documento/*.pdf
 .docx-work/
