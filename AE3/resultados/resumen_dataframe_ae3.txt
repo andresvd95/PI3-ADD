@@ -1,0 +1,39 @@
+RESUMEN DEL DATAFRAME TRANSFORMADO Y ENRIQUECIDO
+================================================
+Dataset de origen: BIT/titanic-dataset, split train
+Archivo local de entrada: AE1/resultados/titanic_transformado.csv
+Cantidad de filas: 891
+Cantidad de columnas: 9
+Filas eliminadas: 0
+
+COLUMNAS TIPOS VALORES NULOS Y VALORES UNICOS
+------------------------------------------------
+                     tipo_dato  valores_nulos  valores_unicos
+sobrevivio                int8              0               2
+clase_pasajero            int8              0               3
+sexo                       str              0               2
+edad                   float64            177              88
+tarifa                 float64              0             248
+ciudad_embarque         string              0               4
+estado_supervivencia       str              0               2
+clase                      str              0               3
+grupo_edad              string              0               7
+
+ESTADISTICAS DESCRIPTIVAS PERTINENTES
+---------------------------------------
+       sobrevivio  clase_pasajero        edad      tarifa
+count  891.000000      891.000000  714.000000  891.000000
+mean     0.383838        2.308642   29.699118   32.204208
+std      0.486592        0.836071   14.526497   49.693429
+min      0.000000        1.000000    0.420000    0.000000
+25%      0.000000        2.000000   20.125000    7.910400
+50%      0.000000        3.000000   28.000000   14.454200
+75%      1.000000        3.000000   38.000000   31.000000
+max      1.000000        3.000000   80.000000  512.329200
+
+CONTROLES DE CALIDAD
+--------------------
+Edades no registradas conservadas: 177
+Puertos no registrados categorizados: 2
+Registros coincidentes en las seis variables de entrada: 120
+Criterio de duplicados: no se eliminaron porque el archivo no contiene un identificador de pasajero y la coincidencia de atributos no demuestra duplicidad del registro.

@@ -1,0 +1,8 @@
+﻿grupo_edad,pasajeros,sobrevivientes,no_sobrevivientes,tasa_supervivencia_pct,participacion_pasajeros_pct
+0 a 12,69,40,29,57.97,7.74
+13 a 17,44,21,23,47.73,4.94
+18 a 29,271,95,176,35.06,30.42
+30 a 44,215,91,124,42.33,24.13
+45 a 59,89,36,53,40.45,9.99
+60 o más,26,7,19,26.92,2.92
+Edad no registrada,177,52,125,29.38,19.87

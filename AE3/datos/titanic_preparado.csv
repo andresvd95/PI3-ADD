@@ -1,0 +1,892 @@
+﻿sobrevivio,clase_pasajero,sexo,edad,tarifa,ciudad_embarque,estado_supervivencia,clase,grupo_edad
+0,3,Hombre,22.0,7.25,Southampton,No sobrevivió,Tercera,18 a 29
+1,1,Mujer,38.0,71.2833,Cherbourg,Sobrevivió,Primera,30 a 44
+1,3,Mujer,26.0,7.925,Southampton,Sobrevivió,Tercera,18 a 29
+1,1,Mujer,35.0,53.1,Southampton,Sobrevivió,Primera,30 a 44
+0,3,Hombre,35.0,8.05,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,,8.4583,Queenstown,No sobrevivió,Tercera,Edad no registrada
+0,1,Hombre,54.0,51.8625,Southampton,No sobrevivió,Primera,45 a 59
+0,3,Hombre,2.0,21.075,Southampton,No sobrevivió,Tercera,0 a 12
+1,3,Mujer,27.0,11.1333,Southampton,Sobrevivió,Tercera,18 a 29
+1,2,Mujer,14.0,30.0708,Cherbourg,Sobrevivió,Segunda,13 a 17
+1,3,Mujer,4.0,16.7,Southampton,Sobrevivió,Tercera,0 a 12
+1,1,Mujer,58.0,26.55,Southampton,Sobrevivió,Primera,45 a 59
+0,3,Hombre,20.0,8.05,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,39.0,31.275,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Mujer,14.0,7.8542,Southampton,No sobrevivió,Tercera,13 a 17
+1,2,Mujer,55.0,16.0,Southampton,Sobrevivió,Segunda,45 a 59
+0,3,Hombre,2.0,29.125,Queenstown,No sobrevivió,Tercera,0 a 12
+1,2,Hombre,,13.0,Southampton,Sobrevivió,Segunda,Edad no registrada
+0,3,Mujer,31.0,18.0,Southampton,No sobrevivió,Tercera,30 a 44
+1,3,Mujer,,7.225,Cherbourg,Sobrevivió,Tercera,Edad no registrada
+0,2,Hombre,35.0,26.0,Southampton,No sobrevivió,Segunda,30 a 44
+1,2,Hombre,34.0,13.0,Southampton,Sobrevivió,Segunda,30 a 44
+1,3,Mujer,15.0,8.0292,Queenstown,Sobrevivió,Tercera,13 a 17
+1,1,Hombre,28.0,35.5,Southampton,Sobrevivió,Primera,18 a 29
+0,3,Mujer,8.0,21.075,Southampton,No sobrevivió,Tercera,0 a 12
+1,3,Mujer,38.0,31.3875,Southampton,Sobrevivió,Tercera,30 a 44
+0,3,Hombre,,7.225,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+0,1,Hombre,19.0,263.0,Southampton,No sobrevivió,Primera,18 a 29
+1,3,Mujer,,7.8792,Queenstown,Sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,,7.8958,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,1,Hombre,40.0,27.7208,Cherbourg,No sobrevivió,Primera,30 a 44
+1,1,Mujer,,146.5208,Cherbourg,Sobrevivió,Primera,Edad no registrada
+1,3,Mujer,,7.75,Queenstown,Sobrevivió,Tercera,Edad no registrada
+0,2,Hombre,66.0,10.5,Southampton,No sobrevivió,Segunda,60 o más
+0,1,Hombre,28.0,82.1708,Cherbourg,No sobrevivió,Primera,18 a 29
+0,1,Hombre,42.0,52.0,Southampton,No sobrevivió,Primera,30 a 44
+1,3,Hombre,,7.2292,Cherbourg,Sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,21.0,8.05,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Mujer,18.0,18.0,Southampton,No sobrevivió,Tercera,18 a 29
+1,3,Mujer,14.0,11.2417,Cherbourg,Sobrevivió,Tercera,13 a 17
+0,3,Mujer,40.0,9.475,Southampton,No sobrevivió,Tercera,30 a 44
+0,2,Mujer,27.0,21.0,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,,7.8958,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+1,2,Mujer,3.0,41.5792,Cherbourg,Sobrevivió,Segunda,0 a 12
+1,3,Mujer,19.0,7.8792,Queenstown,Sobrevivió,Tercera,18 a 29
+0,3,Hombre,,8.05,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,,15.5,Queenstown,No sobrevivió,Tercera,Edad no registrada
+1,3,Mujer,,7.75,Queenstown,Sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,,21.6792,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+0,3,Mujer,18.0,17.8,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,7.0,39.6875,Southampton,No sobrevivió,Tercera,0 a 12
+0,3,Hombre,21.0,7.8,Southampton,No sobrevivió,Tercera,18 a 29
+1,1,Mujer,49.0,76.7292,Cherbourg,Sobrevivió,Primera,45 a 59
+1,2,Mujer,29.0,26.0,Southampton,Sobrevivió,Segunda,18 a 29
+0,1,Hombre,65.0,61.9792,Cherbourg,No sobrevivió,Primera,60 o más
+1,1,Hombre,,35.5,Southampton,Sobrevivió,Primera,Edad no registrada
+1,2,Mujer,21.0,10.5,Southampton,Sobrevivió,Segunda,18 a 29
+0,3,Hombre,28.5,7.2292,Cherbourg,No sobrevivió,Tercera,18 a 29
+1,2,Mujer,5.0,27.75,Southampton,Sobrevivió,Segunda,0 a 12
+0,3,Hombre,11.0,46.9,Southampton,No sobrevivió,Tercera,0 a 12
+0,3,Hombre,22.0,7.2292,Cherbourg,No sobrevivió,Tercera,18 a 29
+1,1,Mujer,38.0,80.0,No registrado,Sobrevivió,Primera,30 a 44
+0,1,Hombre,45.0,83.475,Southampton,No sobrevivió,Primera,45 a 59
+0,3,Hombre,4.0,27.9,Southampton,No sobrevivió,Tercera,0 a 12
+0,1,Hombre,,27.7208,Cherbourg,No sobrevivió,Primera,Edad no registrada
+1,3,Hombre,,15.2458,Cherbourg,Sobrevivió,Tercera,Edad no registrada
+1,2,Mujer,29.0,10.5,Southampton,Sobrevivió,Segunda,18 a 29
+0,3,Hombre,19.0,8.1583,Southampton,No sobrevivió,Tercera,18 a 29
+1,3,Mujer,17.0,7.925,Southampton,Sobrevivió,Tercera,13 a 17
+0,3,Hombre,26.0,8.6625,Southampton,No sobrevivió,Tercera,18 a 29
+0,2,Hombre,32.0,10.5,Southampton,No sobrevivió,Segunda,30 a 44
+0,3,Mujer,16.0,46.9,Southampton,No sobrevivió,Tercera,13 a 17
+0,2,Hombre,21.0,73.5,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,26.0,14.4542,Cherbourg,No sobrevivió,Tercera,18 a 29
+1,3,Hombre,32.0,56.4958,Southampton,Sobrevivió,Tercera,30 a 44
+0,3,Hombre,25.0,7.65,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,,7.8958,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,,8.05,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,2,Hombre,0.83,29.0,Southampton,Sobrevivió,Segunda,0 a 12
+1,3,Mujer,30.0,12.475,Southampton,Sobrevivió,Tercera,30 a 44
+0,3,Hombre,22.0,9.0,Southampton,No sobrevivió,Tercera,18 a 29
+1,3,Hombre,29.0,9.5,Southampton,Sobrevivió,Tercera,18 a 29
+1,3,Mujer,,7.7875,Queenstown,Sobrevivió,Tercera,Edad no registrada
+0,1,Hombre,28.0,47.1,Southampton,No sobrevivió,Primera,18 a 29
+1,2,Mujer,17.0,10.5,Southampton,Sobrevivió,Segunda,13 a 17
+1,3,Mujer,33.0,15.85,Southampton,Sobrevivió,Tercera,30 a 44
+0,3,Hombre,16.0,34.375,Southampton,No sobrevivió,Tercera,13 a 17
+0,3,Hombre,,8.05,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,1,Mujer,23.0,263.0,Southampton,Sobrevivió,Primera,18 a 29
+0,3,Hombre,24.0,8.05,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,29.0,8.05,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,20.0,7.8542,Southampton,No sobrevivió,Tercera,18 a 29
+0,1,Hombre,46.0,61.175,Southampton,No sobrevivió,Primera,45 a 59
+0,3,Hombre,26.0,20.575,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,59.0,7.25,Southampton,No sobrevivió,Tercera,45 a 59
+0,3,Hombre,,8.05,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,1,Hombre,71.0,34.6542,Cherbourg,No sobrevivió,Primera,60 o más
+1,1,Hombre,23.0,63.3583,Cherbourg,Sobrevivió,Primera,18 a 29
+1,2,Mujer,34.0,23.0,Southampton,Sobrevivió,Segunda,30 a 44
+0,2,Hombre,34.0,26.0,Southampton,No sobrevivió,Segunda,30 a 44
+0,3,Mujer,28.0,7.8958,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,,7.8958,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,1,Hombre,21.0,77.2875,Southampton,No sobrevivió,Primera,18 a 29
+0,3,Hombre,33.0,8.6542,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,37.0,7.925,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,28.0,7.8958,Southampton,No sobrevivió,Tercera,18 a 29
+1,3,Mujer,21.0,7.65,Southampton,Sobrevivió,Tercera,18 a 29
+1,3,Hombre,,7.775,Southampton,Sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,38.0,7.8958,Southampton,No sobrevivió,Tercera,30 a 44
+1,3,Mujer,,24.15,Queenstown,Sobrevivió,Tercera,Edad no registrada
+0,1,Hombre,47.0,52.0,Southampton,No sobrevivió,Primera,45 a 59
+0,3,Mujer,14.5,14.4542,Cherbourg,No sobrevivió,Tercera,13 a 17
+0,3,Hombre,22.0,8.05,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Mujer,20.0,9.825,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Mujer,17.0,14.4583,Cherbourg,No sobrevivió,Tercera,13 a 17
+0,3,Hombre,21.0,7.925,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,70.5,7.75,Queenstown,No sobrevivió,Tercera,60 o más
+0,2,Hombre,29.0,21.0,Southampton,No sobrevivió,Segunda,18 a 29
+0,1,Hombre,24.0,247.5208,Cherbourg,No sobrevivió,Primera,18 a 29
+0,3,Mujer,2.0,31.275,Southampton,No sobrevivió,Tercera,0 a 12
+0,2,Hombre,21.0,73.5,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,,8.05,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,2,Hombre,32.5,30.0708,Cherbourg,No sobrevivió,Segunda,30 a 44
+1,2,Mujer,32.5,13.0,Southampton,Sobrevivió,Segunda,30 a 44
+0,1,Hombre,54.0,77.2875,Southampton,No sobrevivió,Primera,45 a 59
+1,3,Hombre,12.0,11.2417,Cherbourg,Sobrevivió,Tercera,0 a 12
+0,3,Hombre,,7.75,Queenstown,No sobrevivió,Tercera,Edad no registrada
+1,3,Hombre,24.0,7.1417,Southampton,Sobrevivió,Tercera,18 a 29
+1,3,Mujer,,22.3583,Cherbourg,Sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,45.0,6.975,Southampton,No sobrevivió,Tercera,45 a 59
+0,3,Hombre,33.0,7.8958,Cherbourg,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,20.0,7.05,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Mujer,47.0,14.5,Southampton,No sobrevivió,Tercera,45 a 59
+1,2,Mujer,29.0,26.0,Southampton,Sobrevivió,Segunda,18 a 29
+0,2,Hombre,25.0,13.0,Southampton,No sobrevivió,Segunda,18 a 29
+0,2,Hombre,23.0,15.0458,Cherbourg,No sobrevivió,Segunda,18 a 29
+1,1,Mujer,19.0,26.2833,Southampton,Sobrevivió,Primera,18 a 29
+0,1,Hombre,37.0,53.1,Southampton,No sobrevivió,Primera,30 a 44
+0,3,Hombre,16.0,9.2167,Southampton,No sobrevivió,Tercera,13 a 17
+0,1,Hombre,24.0,79.2,Cherbourg,No sobrevivió,Primera,18 a 29
+0,3,Mujer,,15.2458,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+1,3,Mujer,22.0,7.75,Southampton,Sobrevivió,Tercera,18 a 29
+1,3,Mujer,24.0,15.85,Southampton,Sobrevivió,Tercera,18 a 29
+0,3,Hombre,19.0,6.75,Queenstown,No sobrevivió,Tercera,18 a 29
+0,2,Hombre,18.0,11.5,Southampton,No sobrevivió,Segunda,18 a 29
+0,2,Hombre,19.0,36.75,Southampton,No sobrevivió,Segunda,18 a 29
+1,3,Hombre,27.0,7.7958,Southampton,Sobrevivió,Tercera,18 a 29
+0,3,Mujer,9.0,34.375,Southampton,No sobrevivió,Tercera,0 a 12
+0,2,Hombre,36.5,26.0,Southampton,No sobrevivió,Segunda,30 a 44
+0,2,Hombre,42.0,13.0,Southampton,No sobrevivió,Segunda,30 a 44
+0,2,Hombre,51.0,12.525,Southampton,No sobrevivió,Segunda,45 a 59
+1,1,Mujer,22.0,66.6,Southampton,Sobrevivió,Primera,18 a 29
+0,3,Hombre,55.5,8.05,Southampton,No sobrevivió,Tercera,45 a 59
+0,3,Hombre,40.5,14.5,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,,7.3125,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,1,Hombre,51.0,61.3792,Cherbourg,No sobrevivió,Primera,45 a 59
+1,3,Mujer,16.0,7.7333,Queenstown,Sobrevivió,Tercera,13 a 17
+0,3,Hombre,30.0,8.05,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,,8.6625,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,,69.55,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,44.0,16.1,Southampton,No sobrevivió,Tercera,30 a 44
+1,2,Mujer,40.0,15.75,Southampton,Sobrevivió,Segunda,30 a 44
+0,3,Hombre,26.0,7.775,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,17.0,8.6625,Southampton,No sobrevivió,Tercera,13 a 17
+0,3,Hombre,1.0,39.6875,Southampton,No sobrevivió,Tercera,0 a 12
+1,3,Hombre,9.0,20.525,Southampton,Sobrevivió,Tercera,0 a 12
+1,1,Mujer,,55.0,Southampton,Sobrevivió,Primera,Edad no registrada
+0,3,Mujer,45.0,27.9,Southampton,No sobrevivió,Tercera,45 a 59
+0,1,Hombre,,25.925,Southampton,No sobrevivió,Primera,Edad no registrada
+0,3,Hombre,28.0,56.4958,Southampton,No sobrevivió,Tercera,18 a 29
+0,1,Hombre,61.0,33.5,Southampton,No sobrevivió,Primera,60 o más
+0,3,Hombre,4.0,29.125,Queenstown,No sobrevivió,Tercera,0 a 12
+1,3,Mujer,1.0,11.1333,Southampton,Sobrevivió,Tercera,0 a 12
+0,3,Hombre,21.0,7.925,Southampton,No sobrevivió,Tercera,18 a 29
+0,1,Hombre,56.0,30.6958,Cherbourg,No sobrevivió,Primera,45 a 59
+0,3,Hombre,18.0,7.8542,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,,25.4667,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,1,Mujer,50.0,28.7125,Cherbourg,No sobrevivió,Primera,45 a 59
+0,2,Hombre,30.0,13.0,Southampton,No sobrevivió,Segunda,30 a 44
+0,3,Hombre,36.0,0.0,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Mujer,,69.55,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,2,Hombre,,15.05,Cherbourg,No sobrevivió,Segunda,Edad no registrada
+0,3,Hombre,9.0,31.3875,Southampton,No sobrevivió,Tercera,0 a 12
+1,2,Hombre,1.0,39.0,Southampton,Sobrevivió,Segunda,0 a 12
+1,3,Mujer,4.0,22.025,Southampton,Sobrevivió,Tercera,0 a 12
+0,1,Hombre,,50.0,Southampton,No sobrevivió,Primera,Edad no registrada
+1,3,Mujer,,15.5,Queenstown,Sobrevivió,Tercera,Edad no registrada
+1,1,Hombre,45.0,26.55,Southampton,Sobrevivió,Primera,45 a 59
+0,3,Hombre,40.0,15.5,Queenstown,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,36.0,7.8958,Southampton,No sobrevivió,Tercera,30 a 44
+1,2,Mujer,32.0,13.0,Southampton,Sobrevivió,Segunda,30 a 44
+0,2,Hombre,19.0,13.0,Southampton,No sobrevivió,Segunda,18 a 29
+1,3,Mujer,19.0,7.8542,Southampton,Sobrevivió,Tercera,18 a 29
+1,2,Hombre,3.0,26.0,Southampton,Sobrevivió,Segunda,0 a 12
+1,1,Mujer,44.0,27.7208,Cherbourg,Sobrevivió,Primera,30 a 44
+1,1,Mujer,58.0,146.5208,Cherbourg,Sobrevivió,Primera,45 a 59
+0,3,Hombre,,7.75,Queenstown,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,42.0,8.4042,Southampton,No sobrevivió,Tercera,30 a 44
+1,3,Mujer,,7.75,Queenstown,Sobrevivió,Tercera,Edad no registrada
+0,2,Mujer,24.0,13.0,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,28.0,9.5,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,,69.55,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,34.0,6.4958,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,45.5,7.225,Cherbourg,No sobrevivió,Tercera,45 a 59
+1,3,Hombre,18.0,8.05,Southampton,Sobrevivió,Tercera,18 a 29
+0,3,Mujer,2.0,10.4625,Southampton,No sobrevivió,Tercera,0 a 12
+0,3,Hombre,32.0,15.85,Southampton,No sobrevivió,Tercera,30 a 44
+1,3,Hombre,26.0,18.7875,Cherbourg,Sobrevivió,Tercera,18 a 29
+1,3,Mujer,16.0,7.75,Queenstown,Sobrevivió,Tercera,13 a 17
+1,1,Hombre,40.0,31.0,Cherbourg,Sobrevivió,Primera,30 a 44
+0,3,Hombre,24.0,7.05,Southampton,No sobrevivió,Tercera,18 a 29
+1,2,Mujer,35.0,21.0,Southampton,Sobrevivió,Segunda,30 a 44
+0,3,Hombre,22.0,7.25,Southampton,No sobrevivió,Tercera,18 a 29
+0,2,Hombre,30.0,13.0,Southampton,No sobrevivió,Segunda,30 a 44
+0,3,Hombre,,7.75,Queenstown,No sobrevivió,Tercera,Edad no registrada
+1,1,Mujer,31.0,113.275,Cherbourg,Sobrevivió,Primera,30 a 44
+1,3,Mujer,27.0,7.925,Southampton,Sobrevivió,Tercera,18 a 29
+0,2,Hombre,42.0,27.0,Southampton,No sobrevivió,Segunda,30 a 44
+1,1,Mujer,32.0,76.2917,Cherbourg,Sobrevivió,Primera,30 a 44
+0,2,Hombre,30.0,10.5,Southampton,No sobrevivió,Segunda,30 a 44
+1,3,Hombre,16.0,8.05,Southampton,Sobrevivió,Tercera,13 a 17
+0,2,Hombre,27.0,13.0,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,51.0,8.05,Southampton,No sobrevivió,Tercera,45 a 59
+0,3,Hombre,,7.8958,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,1,Hombre,38.0,90.0,Southampton,Sobrevivió,Primera,30 a 44
+0,3,Hombre,22.0,9.35,Southampton,No sobrevivió,Tercera,18 a 29
+1,2,Hombre,19.0,10.5,Southampton,Sobrevivió,Segunda,18 a 29
+0,3,Hombre,20.5,7.25,Southampton,No sobrevivió,Tercera,18 a 29
+0,2,Hombre,18.0,13.0,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Mujer,,25.4667,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,1,Mujer,35.0,83.475,Southampton,Sobrevivió,Primera,30 a 44
+0,3,Hombre,29.0,7.775,Southampton,No sobrevivió,Tercera,18 a 29
+0,2,Hombre,59.0,13.5,Southampton,No sobrevivió,Segunda,45 a 59
+1,3,Mujer,5.0,31.3875,Southampton,Sobrevivió,Tercera,0 a 12
+0,2,Hombre,24.0,10.5,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Mujer,,7.55,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,2,Hombre,44.0,26.0,Southampton,No sobrevivió,Segunda,30 a 44
+1,2,Mujer,8.0,26.25,Southampton,Sobrevivió,Segunda,0 a 12
+0,2,Hombre,19.0,10.5,Southampton,No sobrevivió,Segunda,18 a 29
+0,2,Hombre,33.0,12.275,Southampton,No sobrevivió,Segunda,30 a 44
+0,3,Mujer,,14.4542,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+1,3,Mujer,,15.5,Queenstown,Sobrevivió,Tercera,Edad no registrada
+0,2,Hombre,29.0,10.5,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,22.0,7.125,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,30.0,7.225,Cherbourg,No sobrevivió,Tercera,30 a 44
+0,1,Hombre,44.0,90.0,Queenstown,No sobrevivió,Primera,30 a 44
+0,3,Mujer,25.0,7.775,Southampton,No sobrevivió,Tercera,18 a 29
+1,2,Mujer,24.0,14.5,Southampton,Sobrevivió,Segunda,18 a 29
+1,1,Hombre,37.0,52.5542,Southampton,Sobrevivió,Primera,30 a 44
+0,2,Hombre,54.0,26.0,Southampton,No sobrevivió,Segunda,45 a 59
+0,3,Hombre,,7.25,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Mujer,29.0,10.4625,Southampton,No sobrevivió,Tercera,18 a 29
+0,1,Hombre,62.0,26.55,Southampton,No sobrevivió,Primera,60 o más
+0,3,Hombre,30.0,16.1,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Mujer,41.0,20.2125,Southampton,No sobrevivió,Tercera,30 a 44
+1,3,Mujer,29.0,15.2458,Cherbourg,Sobrevivió,Tercera,18 a 29
+1,1,Mujer,,79.2,Cherbourg,Sobrevivió,Primera,Edad no registrada
+1,1,Mujer,30.0,86.5,Southampton,Sobrevivió,Primera,30 a 44
+1,1,Mujer,35.0,512.3292,Cherbourg,Sobrevivió,Primera,30 a 44
+1,2,Mujer,50.0,26.0,Southampton,Sobrevivió,Segunda,45 a 59
+0,3,Hombre,,7.75,Queenstown,No sobrevivió,Tercera,Edad no registrada
+1,3,Hombre,3.0,31.3875,Southampton,Sobrevivió,Tercera,0 a 12
+0,1,Hombre,52.0,79.65,Southampton,No sobrevivió,Primera,45 a 59
+0,1,Hombre,40.0,0.0,Southampton,No sobrevivió,Primera,30 a 44
+0,3,Mujer,,7.75,Queenstown,No sobrevivió,Tercera,Edad no registrada
+0,2,Hombre,36.0,10.5,Southampton,No sobrevivió,Segunda,30 a 44
+0,3,Hombre,16.0,39.6875,Southampton,No sobrevivió,Tercera,13 a 17
+1,3,Hombre,25.0,7.775,Southampton,Sobrevivió,Tercera,18 a 29
+1,1,Mujer,58.0,153.4625,Southampton,Sobrevivió,Primera,45 a 59
+1,1,Mujer,35.0,135.6333,Southampton,Sobrevivió,Primera,30 a 44
+0,1,Hombre,,31.0,Southampton,No sobrevivió,Primera,Edad no registrada
+1,3,Hombre,25.0,0.0,Southampton,Sobrevivió,Tercera,18 a 29
+1,2,Mujer,41.0,19.5,Southampton,Sobrevivió,Segunda,30 a 44
+0,1,Hombre,37.0,29.7,Cherbourg,No sobrevivió,Primera,30 a 44
+1,3,Mujer,,7.75,Queenstown,Sobrevivió,Tercera,Edad no registrada
+1,1,Mujer,63.0,77.9583,Southampton,Sobrevivió,Primera,60 o más
+0,3,Mujer,45.0,7.75,Southampton,No sobrevivió,Tercera,45 a 59
+0,2,Hombre,,0.0,Southampton,No sobrevivió,Segunda,Edad no registrada
+0,3,Hombre,7.0,29.125,Queenstown,No sobrevivió,Tercera,0 a 12
+1,3,Mujer,35.0,20.25,Southampton,Sobrevivió,Tercera,30 a 44
+0,3,Hombre,65.0,7.75,Queenstown,No sobrevivió,Tercera,60 o más
+0,3,Hombre,28.0,7.8542,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,16.0,9.5,Southampton,No sobrevivió,Tercera,13 a 17
+1,3,Hombre,19.0,8.05,Southampton,Sobrevivió,Tercera,18 a 29
+0,1,Hombre,,26.0,Southampton,No sobrevivió,Primera,Edad no registrada
+0,3,Hombre,33.0,8.6625,Cherbourg,No sobrevivió,Tercera,30 a 44
+1,3,Hombre,30.0,9.5,Southampton,Sobrevivió,Tercera,30 a 44
+0,3,Hombre,22.0,7.8958,Southampton,No sobrevivió,Tercera,18 a 29
+1,2,Hombre,42.0,13.0,Southampton,Sobrevivió,Segunda,30 a 44
+1,3,Mujer,22.0,7.75,Queenstown,Sobrevivió,Tercera,18 a 29
+1,1,Mujer,26.0,78.85,Southampton,Sobrevivió,Primera,18 a 29
+1,1,Mujer,19.0,91.0792,Cherbourg,Sobrevivió,Primera,18 a 29
+0,2,Hombre,36.0,12.875,Cherbourg,No sobrevivió,Segunda,30 a 44
+0,3,Mujer,24.0,8.85,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,24.0,7.8958,Southampton,No sobrevivió,Tercera,18 a 29
+0,1,Hombre,,27.7208,Cherbourg,No sobrevivió,Primera,Edad no registrada
+0,3,Hombre,23.5,7.2292,Cherbourg,No sobrevivió,Tercera,18 a 29
+0,1,Mujer,2.0,151.55,Southampton,No sobrevivió,Primera,0 a 12
+1,1,Hombre,,30.5,Southampton,Sobrevivió,Primera,Edad no registrada
+1,1,Mujer,50.0,247.5208,Cherbourg,Sobrevivió,Primera,45 a 59
+1,3,Mujer,,7.75,Queenstown,Sobrevivió,Tercera,Edad no registrada
+1,3,Hombre,,23.25,Queenstown,Sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,19.0,0.0,Southampton,No sobrevivió,Tercera,18 a 29
+1,2,Mujer,,12.35,Queenstown,Sobrevivió,Segunda,Edad no registrada
+0,3,Hombre,,8.05,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,1,Hombre,0.92,151.55,Southampton,Sobrevivió,Primera,0 a 12
+1,1,Mujer,,110.8833,Cherbourg,Sobrevivió,Primera,Edad no registrada
+1,1,Mujer,17.0,108.9,Cherbourg,Sobrevivió,Primera,13 a 17
+0,2,Hombre,30.0,24.0,Cherbourg,No sobrevivió,Segunda,30 a 44
+1,1,Mujer,30.0,56.9292,Cherbourg,Sobrevivió,Primera,30 a 44
+1,1,Mujer,24.0,83.1583,Cherbourg,Sobrevivió,Primera,18 a 29
+1,1,Mujer,18.0,262.375,Cherbourg,Sobrevivió,Primera,18 a 29
+0,2,Mujer,26.0,26.0,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,28.0,7.8958,Southampton,No sobrevivió,Tercera,18 a 29
+0,2,Hombre,43.0,26.25,Southampton,No sobrevivió,Segunda,30 a 44
+1,3,Mujer,26.0,7.8542,Southampton,Sobrevivió,Tercera,18 a 29
+1,2,Mujer,24.0,26.0,Southampton,Sobrevivió,Segunda,18 a 29
+0,2,Hombre,54.0,14.0,Southampton,No sobrevivió,Segunda,45 a 59
+1,1,Mujer,31.0,164.8667,Southampton,Sobrevivió,Primera,30 a 44
+1,1,Mujer,40.0,134.5,Cherbourg,Sobrevivió,Primera,30 a 44
+0,3,Hombre,22.0,7.25,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,27.0,7.8958,Southampton,No sobrevivió,Tercera,18 a 29
+1,2,Mujer,30.0,12.35,Queenstown,Sobrevivió,Segunda,30 a 44
+1,2,Mujer,22.0,29.0,Southampton,Sobrevivió,Segunda,18 a 29
+0,3,Hombre,,69.55,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,1,Mujer,36.0,135.6333,Cherbourg,Sobrevivió,Primera,30 a 44
+0,3,Hombre,61.0,6.2375,Southampton,No sobrevivió,Tercera,60 o más
+1,2,Mujer,36.0,13.0,Southampton,Sobrevivió,Segunda,30 a 44
+1,3,Mujer,31.0,20.525,Southampton,Sobrevivió,Tercera,30 a 44
+1,1,Mujer,16.0,57.9792,Cherbourg,Sobrevivió,Primera,13 a 17
+1,3,Mujer,,23.25,Queenstown,Sobrevivió,Tercera,Edad no registrada
+0,1,Hombre,45.5,28.5,Southampton,No sobrevivió,Primera,45 a 59
+0,1,Hombre,38.0,153.4625,Southampton,No sobrevivió,Primera,30 a 44
+0,3,Hombre,16.0,18.0,Southampton,No sobrevivió,Tercera,13 a 17
+1,1,Mujer,,133.65,Southampton,Sobrevivió,Primera,Edad no registrada
+0,3,Hombre,,7.8958,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,1,Hombre,29.0,66.6,Southampton,No sobrevivió,Primera,18 a 29
+1,1,Mujer,41.0,134.5,Cherbourg,Sobrevivió,Primera,30 a 44
+1,3,Hombre,45.0,8.05,Southampton,Sobrevivió,Tercera,45 a 59
+0,1,Hombre,45.0,35.5,Southampton,No sobrevivió,Primera,45 a 59
+1,2,Hombre,2.0,26.0,Southampton,Sobrevivió,Segunda,0 a 12
+1,1,Mujer,24.0,263.0,Southampton,Sobrevivió,Primera,18 a 29
+0,2,Hombre,28.0,13.0,Southampton,No sobrevivió,Segunda,18 a 29
+0,2,Hombre,25.0,13.0,Southampton,No sobrevivió,Segunda,18 a 29
+0,2,Hombre,36.0,13.0,Southampton,No sobrevivió,Segunda,30 a 44
+1,2,Mujer,24.0,13.0,Southampton,Sobrevivió,Segunda,18 a 29
+1,2,Mujer,40.0,13.0,Southampton,Sobrevivió,Segunda,30 a 44
+1,3,Mujer,,16.1,Southampton,Sobrevivió,Tercera,Edad no registrada
+1,3,Hombre,3.0,15.9,Southampton,Sobrevivió,Tercera,0 a 12
+0,3,Hombre,42.0,8.6625,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,23.0,9.225,Southampton,No sobrevivió,Tercera,18 a 29
+0,1,Hombre,,35.0,Southampton,No sobrevivió,Primera,Edad no registrada
+0,3,Hombre,15.0,7.2292,Cherbourg,No sobrevivió,Tercera,13 a 17
+0,3,Hombre,25.0,17.8,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,,7.225,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,28.0,9.5,Southampton,No sobrevivió,Tercera,18 a 29
+1,1,Mujer,22.0,55.0,Southampton,Sobrevivió,Primera,18 a 29
+0,2,Mujer,38.0,13.0,Southampton,No sobrevivió,Segunda,30 a 44
+1,3,Mujer,,7.8792,Queenstown,Sobrevivió,Tercera,Edad no registrada
+1,3,Mujer,,7.8792,Queenstown,Sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,40.0,27.9,Southampton,No sobrevivió,Tercera,30 a 44
+0,2,Hombre,29.0,27.7208,Cherbourg,No sobrevivió,Segunda,18 a 29
+0,3,Mujer,45.0,14.4542,Cherbourg,No sobrevivió,Tercera,45 a 59
+0,3,Hombre,35.0,7.05,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,,15.5,Queenstown,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,30.0,7.25,Southampton,No sobrevivió,Tercera,30 a 44
+1,1,Mujer,60.0,75.25,Cherbourg,Sobrevivió,Primera,60 o más
+1,3,Mujer,,7.2292,Cherbourg,Sobrevivió,Tercera,Edad no registrada
+1,3,Mujer,,7.75,Queenstown,Sobrevivió,Tercera,Edad no registrada
+1,1,Mujer,24.0,69.3,Cherbourg,Sobrevivió,Primera,18 a 29
+1,1,Hombre,25.0,55.4417,Cherbourg,Sobrevivió,Primera,18 a 29
+0,3,Hombre,18.0,6.4958,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,19.0,8.05,Southampton,No sobrevivió,Tercera,18 a 29
+0,1,Hombre,22.0,135.6333,Cherbourg,No sobrevivió,Primera,18 a 29
+0,3,Mujer,3.0,21.075,Southampton,No sobrevivió,Tercera,0 a 12
+1,1,Mujer,,82.1708,Cherbourg,Sobrevivió,Primera,Edad no registrada
+1,3,Mujer,22.0,7.25,Southampton,Sobrevivió,Tercera,18 a 29
+0,1,Hombre,27.0,211.5,Cherbourg,No sobrevivió,Primera,18 a 29
+0,3,Hombre,20.0,4.0125,Cherbourg,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,19.0,7.775,Southampton,No sobrevivió,Tercera,18 a 29
+1,1,Mujer,42.0,227.525,Cherbourg,Sobrevivió,Primera,30 a 44
+1,3,Mujer,1.0,15.7417,Cherbourg,Sobrevivió,Tercera,0 a 12
+0,3,Hombre,32.0,7.925,Southampton,No sobrevivió,Tercera,30 a 44
+1,1,Mujer,35.0,52.0,Southampton,Sobrevivió,Primera,30 a 44
+0,3,Hombre,,7.8958,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,2,Hombre,18.0,73.5,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,1.0,46.9,Southampton,No sobrevivió,Tercera,0 a 12
+1,2,Mujer,36.0,13.0,Southampton,Sobrevivió,Segunda,30 a 44
+0,3,Hombre,,7.7292,Queenstown,No sobrevivió,Tercera,Edad no registrada
+1,2,Mujer,17.0,12.0,Cherbourg,Sobrevivió,Segunda,13 a 17
+1,1,Hombre,36.0,120.0,Southampton,Sobrevivió,Primera,30 a 44
+1,3,Hombre,21.0,7.7958,Southampton,Sobrevivió,Tercera,18 a 29
+0,3,Hombre,28.0,7.925,Southampton,No sobrevivió,Tercera,18 a 29
+1,1,Mujer,23.0,113.275,Cherbourg,Sobrevivió,Primera,18 a 29
+1,3,Mujer,24.0,16.7,Southampton,Sobrevivió,Tercera,18 a 29
+0,3,Hombre,22.0,7.7958,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Mujer,31.0,7.8542,Southampton,No sobrevivió,Tercera,30 a 44
+0,2,Hombre,46.0,26.0,Southampton,No sobrevivió,Segunda,45 a 59
+0,2,Hombre,23.0,10.5,Southampton,No sobrevivió,Segunda,18 a 29
+1,2,Mujer,28.0,12.65,Southampton,Sobrevivió,Segunda,18 a 29
+1,3,Hombre,39.0,7.925,Southampton,Sobrevivió,Tercera,30 a 44
+0,3,Hombre,26.0,8.05,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Mujer,21.0,9.825,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,28.0,15.85,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Mujer,20.0,8.6625,Southampton,No sobrevivió,Tercera,18 a 29
+0,2,Hombre,34.0,21.0,Southampton,No sobrevivió,Segunda,30 a 44
+0,3,Hombre,51.0,7.75,Southampton,No sobrevivió,Tercera,45 a 59
+1,2,Hombre,3.0,18.75,Southampton,Sobrevivió,Segunda,0 a 12
+0,3,Hombre,21.0,7.775,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Mujer,,25.4667,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,,7.8958,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,,6.8583,Queenstown,No sobrevivió,Tercera,Edad no registrada
+1,1,Mujer,33.0,90.0,Queenstown,Sobrevivió,Primera,30 a 44
+0,2,Hombre,,0.0,Southampton,No sobrevivió,Segunda,Edad no registrada
+1,3,Hombre,44.0,7.925,Southampton,Sobrevivió,Tercera,30 a 44
+0,3,Mujer,,8.05,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,2,Mujer,34.0,32.5,Southampton,Sobrevivió,Segunda,30 a 44
+1,2,Mujer,18.0,13.0,Southampton,Sobrevivió,Segunda,18 a 29
+0,2,Hombre,30.0,13.0,Southampton,No sobrevivió,Segunda,30 a 44
+0,3,Mujer,10.0,24.15,Southampton,No sobrevivió,Tercera,0 a 12
+0,3,Hombre,,7.8958,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,21.0,7.7333,Queenstown,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,29.0,7.875,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Mujer,28.0,14.4,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,18.0,20.2125,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,,7.25,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,2,Mujer,28.0,26.0,Southampton,Sobrevivió,Segunda,18 a 29
+1,2,Mujer,19.0,26.0,Southampton,Sobrevivió,Segunda,18 a 29
+0,3,Hombre,,7.75,Queenstown,No sobrevivió,Tercera,Edad no registrada
+1,3,Hombre,32.0,8.05,Southampton,Sobrevivió,Tercera,30 a 44
+1,1,Hombre,28.0,26.55,Southampton,Sobrevivió,Primera,18 a 29
+1,3,Mujer,,16.1,Southampton,Sobrevivió,Tercera,Edad no registrada
+1,2,Mujer,42.0,26.0,Southampton,Sobrevivió,Segunda,30 a 44
+0,3,Hombre,17.0,7.125,Southampton,No sobrevivió,Tercera,13 a 17
+0,1,Hombre,50.0,55.9,Southampton,No sobrevivió,Primera,45 a 59
+1,1,Mujer,14.0,120.0,Southampton,Sobrevivió,Primera,13 a 17
+0,3,Mujer,21.0,34.375,Southampton,No sobrevivió,Tercera,18 a 29
+1,2,Mujer,24.0,18.75,Southampton,Sobrevivió,Segunda,18 a 29
+0,1,Hombre,64.0,263.0,Southampton,No sobrevivió,Primera,60 o más
+0,2,Hombre,31.0,10.5,Southampton,No sobrevivió,Segunda,30 a 44
+1,2,Mujer,45.0,26.25,Southampton,Sobrevivió,Segunda,45 a 59
+0,3,Hombre,20.0,9.5,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,25.0,7.775,Southampton,No sobrevivió,Tercera,18 a 29
+1,2,Mujer,28.0,13.0,Southampton,Sobrevivió,Segunda,18 a 29
+1,3,Hombre,,8.1125,Southampton,Sobrevivió,Tercera,Edad no registrada
+1,1,Hombre,4.0,81.8583,Southampton,Sobrevivió,Primera,0 a 12
+1,2,Mujer,13.0,19.5,Southampton,Sobrevivió,Segunda,13 a 17
+1,1,Hombre,34.0,26.55,Southampton,Sobrevivió,Primera,30 a 44
+1,3,Mujer,5.0,19.2583,Cherbourg,Sobrevivió,Tercera,0 a 12
+1,1,Hombre,52.0,30.5,Southampton,Sobrevivió,Primera,45 a 59
+0,2,Hombre,36.0,27.75,Southampton,No sobrevivió,Segunda,30 a 44
+0,3,Hombre,,19.9667,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,1,Hombre,30.0,27.75,Cherbourg,No sobrevivió,Primera,30 a 44
+1,1,Hombre,49.0,89.1042,Cherbourg,Sobrevivió,Primera,45 a 59
+0,3,Hombre,,8.05,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,3,Hombre,29.0,7.8958,Cherbourg,Sobrevivió,Tercera,18 a 29
+0,1,Hombre,65.0,26.55,Southampton,No sobrevivió,Primera,60 o más
+1,1,Mujer,,51.8625,Southampton,Sobrevivió,Primera,Edad no registrada
+1,2,Mujer,50.0,10.5,Southampton,Sobrevivió,Segunda,45 a 59
+0,3,Hombre,,7.75,Queenstown,No sobrevivió,Tercera,Edad no registrada
+1,1,Hombre,48.0,26.55,Southampton,Sobrevivió,Primera,45 a 59
+0,3,Hombre,34.0,8.05,Southampton,No sobrevivió,Tercera,30 a 44
+0,1,Hombre,47.0,38.5,Southampton,No sobrevivió,Primera,45 a 59
+0,2,Hombre,48.0,13.0,Southampton,No sobrevivió,Segunda,45 a 59
+0,3,Hombre,,8.05,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,38.0,7.05,Southampton,No sobrevivió,Tercera,30 a 44
+0,2,Hombre,,0.0,Southampton,No sobrevivió,Segunda,Edad no registrada
+0,1,Hombre,56.0,26.55,Southampton,No sobrevivió,Primera,45 a 59
+0,3,Hombre,,7.725,Queenstown,No sobrevivió,Tercera,Edad no registrada
+1,3,Mujer,0.75,19.2583,Cherbourg,Sobrevivió,Tercera,0 a 12
+0,3,Hombre,,7.25,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,38.0,8.6625,Southampton,No sobrevivió,Tercera,30 a 44
+1,2,Mujer,33.0,27.75,Southampton,Sobrevivió,Segunda,30 a 44
+1,2,Mujer,23.0,13.7917,Cherbourg,Sobrevivió,Segunda,18 a 29
+0,3,Mujer,22.0,9.8375,Southampton,No sobrevivió,Tercera,18 a 29
+0,1,Hombre,,52.0,Southampton,No sobrevivió,Primera,Edad no registrada
+0,2,Hombre,34.0,21.0,Southampton,No sobrevivió,Segunda,30 a 44
+0,3,Hombre,29.0,7.0458,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,22.0,7.5208,Southampton,No sobrevivió,Tercera,18 a 29
+1,3,Mujer,2.0,12.2875,Southampton,Sobrevivió,Tercera,0 a 12
+0,3,Hombre,9.0,46.9,Southampton,No sobrevivió,Tercera,0 a 12
+0,2,Hombre,,0.0,Southampton,No sobrevivió,Segunda,Edad no registrada
+0,3,Hombre,50.0,8.05,Southampton,No sobrevivió,Tercera,45 a 59
+1,3,Mujer,63.0,9.5875,Southampton,Sobrevivió,Tercera,60 o más
+1,1,Hombre,25.0,91.0792,Cherbourg,Sobrevivió,Primera,18 a 29
+0,3,Mujer,,25.4667,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,1,Mujer,35.0,90.0,Southampton,Sobrevivió,Primera,30 a 44
+0,1,Hombre,58.0,29.7,Cherbourg,No sobrevivió,Primera,45 a 59
+0,3,Hombre,30.0,8.05,Southampton,No sobrevivió,Tercera,30 a 44
+1,3,Hombre,9.0,15.9,Southampton,Sobrevivió,Tercera,0 a 12
+0,3,Hombre,,19.9667,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,21.0,7.25,Southampton,No sobrevivió,Tercera,18 a 29
+0,1,Hombre,55.0,30.5,Southampton,No sobrevivió,Primera,45 a 59
+0,1,Hombre,71.0,49.5042,Cherbourg,No sobrevivió,Primera,60 o más
+0,3,Hombre,21.0,8.05,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,,14.4583,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+1,1,Mujer,54.0,78.2667,Cherbourg,Sobrevivió,Primera,45 a 59
+0,3,Hombre,,15.1,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,1,Mujer,25.0,151.55,Southampton,No sobrevivió,Primera,18 a 29
+0,3,Hombre,24.0,7.7958,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,17.0,8.6625,Southampton,No sobrevivió,Tercera,13 a 17
+0,3,Mujer,21.0,7.75,Queenstown,No sobrevivió,Tercera,18 a 29
+0,3,Mujer,,7.6292,Queenstown,No sobrevivió,Tercera,Edad no registrada
+0,3,Mujer,37.0,9.5875,Southampton,No sobrevivió,Tercera,30 a 44
+1,1,Mujer,16.0,86.5,Southampton,Sobrevivió,Primera,13 a 17
+0,1,Hombre,18.0,108.9,Cherbourg,No sobrevivió,Primera,18 a 29
+1,2,Mujer,33.0,26.0,Southampton,Sobrevivió,Segunda,30 a 44
+1,1,Hombre,,26.55,Southampton,Sobrevivió,Primera,Edad no registrada
+0,3,Hombre,28.0,22.525,Southampton,No sobrevivió,Tercera,18 a 29
+1,3,Hombre,26.0,56.4958,Southampton,Sobrevivió,Tercera,18 a 29
+1,3,Hombre,29.0,7.75,Queenstown,Sobrevivió,Tercera,18 a 29
+0,3,Hombre,,8.05,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,1,Hombre,36.0,26.2875,Southampton,Sobrevivió,Primera,30 a 44
+1,1,Mujer,54.0,59.4,Cherbourg,Sobrevivió,Primera,45 a 59
+0,3,Hombre,24.0,7.4958,Southampton,No sobrevivió,Tercera,18 a 29
+0,1,Hombre,47.0,34.0208,Southampton,No sobrevivió,Primera,45 a 59
+1,2,Mujer,34.0,10.5,Southampton,Sobrevivió,Segunda,30 a 44
+0,3,Hombre,,24.15,Queenstown,No sobrevivió,Tercera,Edad no registrada
+1,2,Mujer,36.0,26.0,Southampton,Sobrevivió,Segunda,30 a 44
+0,3,Hombre,32.0,7.8958,Southampton,No sobrevivió,Tercera,30 a 44
+1,1,Mujer,30.0,93.5,Southampton,Sobrevivió,Primera,30 a 44
+0,3,Hombre,22.0,7.8958,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,,7.225,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+1,1,Mujer,44.0,57.9792,Cherbourg,Sobrevivió,Primera,30 a 44
+0,3,Hombre,,7.2292,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,40.5,7.75,Queenstown,No sobrevivió,Tercera,30 a 44
+1,2,Mujer,50.0,10.5,Southampton,Sobrevivió,Segunda,45 a 59
+0,1,Hombre,,221.7792,Southampton,No sobrevivió,Primera,Edad no registrada
+0,3,Hombre,39.0,7.925,Southampton,No sobrevivió,Tercera,30 a 44
+0,2,Hombre,23.0,11.5,Southampton,No sobrevivió,Segunda,18 a 29
+1,2,Mujer,2.0,26.0,Southampton,Sobrevivió,Segunda,0 a 12
+0,3,Hombre,,7.2292,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,17.0,7.2292,Cherbourg,No sobrevivió,Tercera,13 a 17
+1,3,Mujer,,22.3583,Cherbourg,Sobrevivió,Tercera,Edad no registrada
+0,3,Mujer,30.0,8.6625,Southampton,No sobrevivió,Tercera,30 a 44
+1,2,Mujer,7.0,26.25,Southampton,Sobrevivió,Segunda,0 a 12
+0,1,Hombre,45.0,26.55,Southampton,No sobrevivió,Primera,45 a 59
+1,1,Mujer,30.0,106.425,Cherbourg,Sobrevivió,Primera,30 a 44
+0,3,Hombre,,14.5,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,1,Mujer,22.0,49.5,Cherbourg,Sobrevivió,Primera,18 a 29
+1,1,Mujer,36.0,71.0,Southampton,Sobrevivió,Primera,30 a 44
+0,3,Mujer,9.0,31.275,Southampton,No sobrevivió,Tercera,0 a 12
+0,3,Mujer,11.0,31.275,Southampton,No sobrevivió,Tercera,0 a 12
+1,2,Hombre,32.0,26.0,Southampton,Sobrevivió,Segunda,30 a 44
+0,1,Hombre,50.0,106.425,Cherbourg,No sobrevivió,Primera,45 a 59
+0,1,Hombre,64.0,26.0,Southampton,No sobrevivió,Primera,60 o más
+1,2,Mujer,19.0,26.0,Southampton,Sobrevivió,Segunda,18 a 29
+1,2,Hombre,,13.8625,Cherbourg,Sobrevivió,Segunda,Edad no registrada
+0,3,Hombre,33.0,20.525,Southampton,No sobrevivió,Tercera,30 a 44
+1,2,Hombre,8.0,36.75,Southampton,Sobrevivió,Segunda,0 a 12
+1,1,Hombre,17.0,110.8833,Cherbourg,Sobrevivió,Primera,13 a 17
+0,2,Hombre,27.0,26.0,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,,7.8292,Queenstown,No sobrevivió,Tercera,Edad no registrada
+1,3,Hombre,22.0,7.225,Cherbourg,Sobrevivió,Tercera,18 a 29
+1,3,Mujer,22.0,7.775,Southampton,Sobrevivió,Tercera,18 a 29
+0,1,Hombre,62.0,26.55,Southampton,No sobrevivió,Primera,60 o más
+1,1,Mujer,48.0,39.6,Cherbourg,Sobrevivió,Primera,45 a 59
+0,1,Hombre,,227.525,Cherbourg,No sobrevivió,Primera,Edad no registrada
+1,1,Mujer,39.0,79.65,Southampton,Sobrevivió,Primera,30 a 44
+1,3,Mujer,36.0,17.4,Southampton,Sobrevivió,Tercera,30 a 44
+0,3,Hombre,,7.75,Queenstown,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,40.0,7.8958,Southampton,No sobrevivió,Tercera,30 a 44
+0,2,Hombre,28.0,13.5,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,,8.05,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Mujer,,8.05,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,24.0,24.15,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,19.0,7.8958,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Mujer,29.0,21.075,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,,7.2292,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+1,3,Hombre,32.0,7.8542,Southampton,Sobrevivió,Tercera,30 a 44
+1,2,Hombre,62.0,10.5,Southampton,Sobrevivió,Segunda,60 o más
+1,1,Mujer,53.0,51.4792,Southampton,Sobrevivió,Primera,45 a 59
+1,1,Hombre,36.0,26.3875,Southampton,Sobrevivió,Primera,30 a 44
+1,3,Mujer,,7.75,Queenstown,Sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,16.0,8.05,Southampton,No sobrevivió,Tercera,13 a 17
+0,3,Hombre,19.0,14.5,Southampton,No sobrevivió,Tercera,18 a 29
+1,2,Mujer,34.0,13.0,Southampton,Sobrevivió,Segunda,30 a 44
+1,1,Mujer,39.0,55.9,Southampton,Sobrevivió,Primera,30 a 44
+0,3,Mujer,,14.4583,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+1,3,Hombre,32.0,7.925,Southampton,Sobrevivió,Tercera,30 a 44
+1,2,Mujer,25.0,30.0,Southampton,Sobrevivió,Segunda,18 a 29
+1,1,Mujer,39.0,110.8833,Cherbourg,Sobrevivió,Primera,30 a 44
+0,2,Hombre,54.0,26.0,Southampton,No sobrevivió,Segunda,45 a 59
+0,1,Hombre,36.0,40.125,Cherbourg,No sobrevivió,Primera,30 a 44
+0,3,Hombre,,8.7125,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+1,1,Mujer,18.0,79.65,Southampton,Sobrevivió,Primera,18 a 29
+0,2,Hombre,47.0,15.0,Southampton,No sobrevivió,Segunda,45 a 59
+1,1,Hombre,60.0,79.2,Cherbourg,Sobrevivió,Primera,60 o más
+0,3,Hombre,22.0,8.05,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,,8.05,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,35.0,7.125,Southampton,No sobrevivió,Tercera,30 a 44
+1,1,Mujer,52.0,78.2667,Cherbourg,Sobrevivió,Primera,45 a 59
+0,3,Hombre,47.0,7.25,Southampton,No sobrevivió,Tercera,45 a 59
+0,3,Mujer,,7.75,Queenstown,No sobrevivió,Tercera,Edad no registrada
+0,2,Hombre,37.0,26.0,Southampton,No sobrevivió,Segunda,30 a 44
+0,3,Hombre,36.0,24.15,Southampton,No sobrevivió,Tercera,30 a 44
+1,2,Mujer,,33.0,Southampton,Sobrevivió,Segunda,Edad no registrada
+0,3,Hombre,49.0,0.0,Southampton,No sobrevivió,Tercera,45 a 59
+0,3,Hombre,,7.225,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+1,1,Hombre,49.0,56.9292,Cherbourg,Sobrevivió,Primera,45 a 59
+1,2,Mujer,24.0,27.0,Southampton,Sobrevivió,Segunda,18 a 29
+0,3,Hombre,,7.8958,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,1,Hombre,,42.4,Southampton,No sobrevivió,Primera,Edad no registrada
+0,3,Hombre,44.0,8.05,Southampton,No sobrevivió,Tercera,30 a 44
+1,1,Hombre,35.0,26.55,Cherbourg,Sobrevivió,Primera,30 a 44
+0,3,Hombre,36.0,15.55,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,30.0,7.8958,Southampton,No sobrevivió,Tercera,30 a 44
+1,1,Hombre,27.0,30.5,Southampton,Sobrevivió,Primera,18 a 29
+1,2,Mujer,22.0,41.5792,Cherbourg,Sobrevivió,Segunda,18 a 29
+1,1,Mujer,40.0,153.4625,Southampton,Sobrevivió,Primera,30 a 44
+0,3,Mujer,39.0,31.275,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,,7.05,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,3,Mujer,,15.5,Queenstown,Sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,,7.75,Queenstown,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,35.0,8.05,Southampton,No sobrevivió,Tercera,30 a 44
+1,2,Mujer,24.0,65.0,Southampton,Sobrevivió,Segunda,18 a 29
+0,3,Hombre,34.0,14.4,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Mujer,26.0,16.1,Southampton,No sobrevivió,Tercera,18 a 29
+1,2,Mujer,4.0,39.0,Southampton,Sobrevivió,Segunda,0 a 12
+0,2,Hombre,26.0,10.5,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,27.0,14.4542,Cherbourg,No sobrevivió,Tercera,18 a 29
+1,1,Hombre,42.0,52.5542,Southampton,Sobrevivió,Primera,30 a 44
+1,3,Hombre,20.0,15.7417,Cherbourg,Sobrevivió,Tercera,18 a 29
+0,3,Hombre,21.0,7.8542,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,21.0,16.1,Southampton,No sobrevivió,Tercera,18 a 29
+0,1,Hombre,61.0,32.3208,Southampton,No sobrevivió,Primera,60 o más
+0,2,Hombre,57.0,12.35,Queenstown,No sobrevivió,Segunda,45 a 59
+1,1,Mujer,21.0,77.9583,Southampton,Sobrevivió,Primera,18 a 29
+0,3,Hombre,26.0,7.8958,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,,7.7333,Queenstown,No sobrevivió,Tercera,Edad no registrada
+1,1,Hombre,80.0,30.0,Southampton,Sobrevivió,Primera,60 o más
+0,3,Hombre,51.0,7.0542,Southampton,No sobrevivió,Tercera,45 a 59
+1,1,Hombre,32.0,30.5,Cherbourg,Sobrevivió,Primera,30 a 44
+0,1,Hombre,,0.0,Southampton,No sobrevivió,Primera,Edad no registrada
+0,3,Mujer,9.0,27.9,Southampton,No sobrevivió,Tercera,0 a 12
+1,2,Mujer,28.0,13.0,Southampton,Sobrevivió,Segunda,18 a 29
+0,3,Hombre,32.0,7.925,Southampton,No sobrevivió,Tercera,30 a 44
+0,2,Hombre,31.0,26.25,Southampton,No sobrevivió,Segunda,30 a 44
+0,3,Mujer,41.0,39.6875,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,,16.1,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,20.0,7.8542,Southampton,No sobrevivió,Tercera,18 a 29
+1,1,Mujer,24.0,69.3,Cherbourg,Sobrevivió,Primera,18 a 29
+0,3,Mujer,2.0,27.9,Southampton,No sobrevivió,Tercera,0 a 12
+1,3,Hombre,,56.4958,Southampton,Sobrevivió,Tercera,Edad no registrada
+1,3,Mujer,0.75,19.2583,Cherbourg,Sobrevivió,Tercera,0 a 12
+1,1,Hombre,48.0,76.7292,Cherbourg,Sobrevivió,Primera,45 a 59
+0,3,Hombre,19.0,7.8958,Southampton,No sobrevivió,Tercera,18 a 29
+1,1,Hombre,56.0,35.5,Cherbourg,Sobrevivió,Primera,45 a 59
+0,3,Hombre,,7.55,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,3,Mujer,23.0,7.55,Southampton,Sobrevivió,Tercera,18 a 29
+0,3,Hombre,,7.8958,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,2,Mujer,18.0,23.0,Southampton,Sobrevivió,Segunda,18 a 29
+0,3,Hombre,21.0,8.4333,Southampton,No sobrevivió,Tercera,18 a 29
+1,3,Mujer,,7.8292,Queenstown,Sobrevivió,Tercera,Edad no registrada
+0,3,Mujer,18.0,6.75,Queenstown,No sobrevivió,Tercera,18 a 29
+0,2,Hombre,24.0,73.5,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,,7.8958,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Mujer,32.0,15.5,Queenstown,No sobrevivió,Tercera,30 a 44
+0,2,Hombre,23.0,13.0,Southampton,No sobrevivió,Segunda,18 a 29
+0,1,Hombre,58.0,113.275,Cherbourg,No sobrevivió,Primera,45 a 59
+1,1,Hombre,50.0,133.65,Southampton,Sobrevivió,Primera,45 a 59
+0,3,Hombre,40.0,7.225,Cherbourg,No sobrevivió,Tercera,30 a 44
+0,1,Hombre,47.0,25.5875,Southampton,No sobrevivió,Primera,45 a 59
+0,3,Hombre,36.0,7.4958,Southampton,No sobrevivió,Tercera,30 a 44
+1,3,Hombre,20.0,7.925,Southampton,Sobrevivió,Tercera,18 a 29
+0,2,Hombre,32.0,73.5,Southampton,No sobrevivió,Segunda,30 a 44
+0,2,Hombre,25.0,13.0,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,,7.775,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,43.0,8.05,Southampton,No sobrevivió,Tercera,30 a 44
+1,1,Mujer,,52.0,Southampton,Sobrevivió,Primera,Edad no registrada
+1,2,Mujer,40.0,39.0,Southampton,Sobrevivió,Segunda,30 a 44
+0,1,Hombre,31.0,52.0,Southampton,No sobrevivió,Primera,30 a 44
+0,2,Hombre,70.0,10.5,Southampton,No sobrevivió,Segunda,60 o más
+1,2,Hombre,31.0,13.0,Southampton,Sobrevivió,Segunda,30 a 44
+0,2,Hombre,,0.0,Southampton,No sobrevivió,Segunda,Edad no registrada
+0,3,Hombre,18.0,7.775,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,24.5,8.05,Southampton,No sobrevivió,Tercera,18 a 29
+1,3,Mujer,18.0,9.8417,Southampton,Sobrevivió,Tercera,18 a 29
+0,3,Mujer,43.0,46.9,Southampton,No sobrevivió,Tercera,30 a 44
+1,1,Hombre,36.0,512.3292,Cherbourg,Sobrevivió,Primera,30 a 44
+0,3,Mujer,,8.1375,Queenstown,No sobrevivió,Tercera,Edad no registrada
+1,1,Hombre,27.0,76.7292,Cherbourg,Sobrevivió,Primera,18 a 29
+0,3,Hombre,20.0,9.225,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,14.0,46.9,Southampton,No sobrevivió,Tercera,13 a 17
+0,2,Hombre,60.0,39.0,Southampton,No sobrevivió,Segunda,60 o más
+0,2,Hombre,25.0,41.5792,Cherbourg,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,14.0,39.6875,Southampton,No sobrevivió,Tercera,13 a 17
+0,3,Hombre,19.0,10.1708,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,18.0,7.7958,Southampton,No sobrevivió,Tercera,18 a 29
+1,1,Mujer,15.0,211.3375,Southampton,Sobrevivió,Primera,13 a 17
+1,1,Hombre,31.0,57.0,Southampton,Sobrevivió,Primera,30 a 44
+1,3,Mujer,4.0,13.4167,Cherbourg,Sobrevivió,Tercera,0 a 12
+1,3,Hombre,,56.4958,Southampton,Sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,25.0,7.225,Cherbourg,No sobrevivió,Tercera,18 a 29
+0,1,Hombre,60.0,26.55,Southampton,No sobrevivió,Primera,60 o más
+0,2,Hombre,52.0,13.5,Southampton,No sobrevivió,Segunda,45 a 59
+0,3,Hombre,44.0,8.05,Southampton,No sobrevivió,Tercera,30 a 44
+1,3,Mujer,,7.7333,Queenstown,Sobrevivió,Tercera,Edad no registrada
+0,1,Hombre,49.0,110.8833,Cherbourg,No sobrevivió,Primera,45 a 59
+0,3,Hombre,42.0,7.65,Southampton,No sobrevivió,Tercera,30 a 44
+1,1,Mujer,18.0,227.525,Cherbourg,Sobrevivió,Primera,18 a 29
+1,1,Hombre,35.0,26.2875,Southampton,Sobrevivió,Primera,30 a 44
+0,3,Mujer,18.0,14.4542,Cherbourg,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,25.0,7.7417,Queenstown,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,26.0,7.8542,Southampton,No sobrevivió,Tercera,18 a 29
+0,2,Hombre,39.0,26.0,Southampton,No sobrevivió,Segunda,30 a 44
+1,2,Mujer,45.0,13.5,Southampton,Sobrevivió,Segunda,45 a 59
+1,1,Hombre,42.0,26.2875,Southampton,Sobrevivió,Primera,30 a 44
+1,1,Mujer,22.0,151.55,Southampton,Sobrevivió,Primera,18 a 29
+1,3,Hombre,,15.2458,Cherbourg,Sobrevivió,Tercera,Edad no registrada
+1,1,Mujer,24.0,49.5042,Cherbourg,Sobrevivió,Primera,18 a 29
+0,1,Hombre,,26.55,Southampton,No sobrevivió,Primera,Edad no registrada
+1,1,Hombre,48.0,52.0,Southampton,Sobrevivió,Primera,45 a 59
+0,3,Hombre,29.0,9.4833,Southampton,No sobrevivió,Tercera,18 a 29
+0,2,Hombre,52.0,13.0,Southampton,No sobrevivió,Segunda,45 a 59
+0,3,Hombre,19.0,7.65,Southampton,No sobrevivió,Tercera,18 a 29
+1,1,Mujer,38.0,227.525,Cherbourg,Sobrevivió,Primera,30 a 44
+1,2,Mujer,27.0,10.5,Southampton,Sobrevivió,Segunda,18 a 29
+0,3,Hombre,,15.5,Queenstown,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,33.0,7.775,Southampton,No sobrevivió,Tercera,30 a 44
+1,2,Mujer,6.0,33.0,Southampton,Sobrevivió,Segunda,0 a 12
+0,3,Hombre,17.0,7.0542,Southampton,No sobrevivió,Tercera,13 a 17
+0,2,Hombre,34.0,13.0,Southampton,No sobrevivió,Segunda,30 a 44
+0,2,Hombre,50.0,13.0,Southampton,No sobrevivió,Segunda,45 a 59
+1,1,Hombre,27.0,53.1,Southampton,Sobrevivió,Primera,18 a 29
+0,3,Hombre,20.0,8.6625,Southampton,No sobrevivió,Tercera,18 a 29
+1,2,Mujer,30.0,21.0,Southampton,Sobrevivió,Segunda,30 a 44
+1,3,Mujer,,7.7375,Queenstown,Sobrevivió,Tercera,Edad no registrada
+0,2,Hombre,25.0,26.0,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Mujer,25.0,7.925,Southampton,No sobrevivió,Tercera,18 a 29
+1,1,Mujer,29.0,211.3375,Southampton,Sobrevivió,Primera,18 a 29
+0,3,Hombre,11.0,18.7875,Cherbourg,No sobrevivió,Tercera,0 a 12
+0,2,Hombre,,0.0,Southampton,No sobrevivió,Segunda,Edad no registrada
+0,2,Hombre,23.0,13.0,Southampton,No sobrevivió,Segunda,18 a 29
+0,2,Hombre,23.0,13.0,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,28.5,16.1,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Mujer,48.0,34.375,Southampton,No sobrevivió,Tercera,45 a 59
+1,1,Hombre,35.0,512.3292,Cherbourg,Sobrevivió,Primera,30 a 44
+0,3,Hombre,,7.8958,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,,7.8958,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,1,Hombre,,30.0,Southampton,Sobrevivió,Primera,Edad no registrada
+0,1,Hombre,36.0,78.85,Southampton,No sobrevivió,Primera,30 a 44
+1,1,Mujer,21.0,262.375,Cherbourg,Sobrevivió,Primera,18 a 29
+0,3,Hombre,24.0,16.1,Southampton,No sobrevivió,Tercera,18 a 29
+1,3,Hombre,31.0,7.925,Southampton,Sobrevivió,Tercera,30 a 44
+0,1,Hombre,70.0,71.0,Southampton,No sobrevivió,Primera,60 o más
+0,3,Hombre,16.0,20.25,Southampton,No sobrevivió,Tercera,13 a 17
+1,2,Mujer,30.0,13.0,Southampton,Sobrevivió,Segunda,30 a 44
+0,1,Hombre,19.0,53.1,Southampton,No sobrevivió,Primera,18 a 29
+0,3,Hombre,31.0,7.75,Queenstown,No sobrevivió,Tercera,30 a 44
+1,2,Mujer,4.0,23.0,Southampton,Sobrevivió,Segunda,0 a 12
+1,3,Hombre,6.0,12.475,Southampton,Sobrevivió,Tercera,0 a 12
+0,3,Hombre,33.0,9.5,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,23.0,7.8958,Southampton,No sobrevivió,Tercera,18 a 29
+1,2,Mujer,48.0,65.0,Southampton,Sobrevivió,Segunda,45 a 59
+1,2,Hombre,0.67,14.5,Southampton,Sobrevivió,Segunda,0 a 12
+0,3,Hombre,28.0,7.7958,Southampton,No sobrevivió,Tercera,18 a 29
+0,2,Hombre,18.0,11.5,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,34.0,8.05,Southampton,No sobrevivió,Tercera,30 a 44
+1,1,Mujer,33.0,86.5,Southampton,Sobrevivió,Primera,30 a 44
+0,3,Hombre,,14.5,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,41.0,7.125,Southampton,No sobrevivió,Tercera,30 a 44
+1,3,Hombre,20.0,7.2292,Cherbourg,Sobrevivió,Tercera,18 a 29
+1,1,Mujer,36.0,120.0,Southampton,Sobrevivió,Primera,30 a 44
+0,3,Hombre,16.0,7.775,Southampton,No sobrevivió,Tercera,13 a 17
+1,1,Mujer,51.0,77.9583,Southampton,Sobrevivió,Primera,45 a 59
+0,1,Hombre,,39.6,Cherbourg,No sobrevivió,Primera,Edad no registrada
+0,3,Mujer,30.5,7.75,Queenstown,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,,24.15,Queenstown,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,32.0,8.3625,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,24.0,9.5,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,48.0,7.8542,Southampton,No sobrevivió,Tercera,45 a 59
+0,2,Mujer,57.0,10.5,Southampton,No sobrevivió,Segunda,45 a 59
+0,3,Hombre,,7.225,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+1,2,Mujer,54.0,23.0,Southampton,Sobrevivió,Segunda,45 a 59
+0,3,Hombre,18.0,7.75,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,,7.75,Queenstown,No sobrevivió,Tercera,Edad no registrada
+1,3,Mujer,5.0,12.475,Southampton,Sobrevivió,Tercera,0 a 12
+0,3,Hombre,,7.7375,Queenstown,No sobrevivió,Tercera,Edad no registrada
+1,1,Mujer,43.0,211.3375,Southampton,Sobrevivió,Primera,30 a 44
+1,3,Mujer,13.0,7.2292,Cherbourg,Sobrevivió,Tercera,13 a 17
+1,1,Mujer,17.0,57.0,Southampton,Sobrevivió,Primera,13 a 17
+0,1,Hombre,29.0,30.0,Southampton,No sobrevivió,Primera,18 a 29
+0,3,Hombre,,23.45,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,25.0,7.05,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,25.0,7.25,Southampton,No sobrevivió,Tercera,18 a 29
+1,3,Mujer,18.0,7.4958,Southampton,Sobrevivió,Tercera,18 a 29
+0,3,Hombre,8.0,29.125,Queenstown,No sobrevivió,Tercera,0 a 12
+1,3,Hombre,1.0,20.575,Southampton,Sobrevivió,Tercera,0 a 12
+0,1,Hombre,46.0,79.2,Cherbourg,No sobrevivió,Primera,45 a 59
+0,3,Hombre,,7.75,Queenstown,No sobrevivió,Tercera,Edad no registrada
+0,2,Hombre,16.0,26.0,Southampton,No sobrevivió,Segunda,13 a 17
+0,3,Mujer,,69.55,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,1,Hombre,,30.6958,Cherbourg,No sobrevivió,Primera,Edad no registrada
+0,3,Hombre,25.0,7.8958,Southampton,No sobrevivió,Tercera,18 a 29
+0,2,Hombre,39.0,13.0,Southampton,No sobrevivió,Segunda,30 a 44
+1,1,Mujer,49.0,25.9292,Southampton,Sobrevivió,Primera,45 a 59
+1,3,Mujer,31.0,8.6833,Southampton,Sobrevivió,Tercera,30 a 44
+0,3,Hombre,30.0,7.2292,Cherbourg,No sobrevivió,Tercera,30 a 44
+0,3,Mujer,30.0,24.15,Southampton,No sobrevivió,Tercera,30 a 44
+0,2,Hombre,34.0,13.0,Southampton,No sobrevivió,Segunda,30 a 44
+1,2,Mujer,31.0,26.25,Southampton,Sobrevivió,Segunda,30 a 44
+1,1,Hombre,11.0,120.0,Southampton,Sobrevivió,Primera,0 a 12
+1,3,Hombre,0.42,8.5167,Cherbourg,Sobrevivió,Tercera,0 a 12
+1,3,Hombre,27.0,6.975,Southampton,Sobrevivió,Tercera,18 a 29
+0,3,Hombre,31.0,7.775,Southampton,No sobrevivió,Tercera,30 a 44
+0,1,Hombre,39.0,0.0,Southampton,No sobrevivió,Primera,30 a 44
+0,3,Mujer,18.0,7.775,Southampton,No sobrevivió,Tercera,18 a 29
+0,2,Hombre,39.0,13.0,Southampton,No sobrevivió,Segunda,30 a 44
+1,1,Mujer,33.0,53.1,Southampton,Sobrevivió,Primera,30 a 44
+0,3,Hombre,26.0,7.8875,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,39.0,24.15,Southampton,No sobrevivió,Tercera,30 a 44
+0,2,Hombre,35.0,10.5,Southampton,No sobrevivió,Segunda,30 a 44
+0,3,Mujer,6.0,31.275,Southampton,No sobrevivió,Tercera,0 a 12
+0,3,Hombre,30.5,8.05,Southampton,No sobrevivió,Tercera,30 a 44
+0,1,Hombre,,0.0,Southampton,No sobrevivió,Primera,Edad no registrada
+0,3,Mujer,23.0,7.925,Southampton,No sobrevivió,Tercera,18 a 29
+0,2,Hombre,31.0,37.0042,Cherbourg,No sobrevivió,Segunda,30 a 44
+0,3,Hombre,43.0,6.45,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,10.0,27.9,Southampton,No sobrevivió,Tercera,0 a 12
+1,1,Mujer,52.0,93.5,Southampton,Sobrevivió,Primera,45 a 59
+1,3,Hombre,27.0,8.6625,Southampton,Sobrevivió,Tercera,18 a 29
+0,1,Hombre,38.0,0.0,Southampton,No sobrevivió,Primera,30 a 44
+1,3,Mujer,27.0,12.475,Southampton,Sobrevivió,Tercera,18 a 29
+0,3,Hombre,2.0,39.6875,Southampton,No sobrevivió,Tercera,0 a 12
+0,3,Hombre,,6.95,Queenstown,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,,56.4958,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,2,Hombre,1.0,37.0042,Cherbourg,Sobrevivió,Segunda,0 a 12
+1,3,Hombre,,7.75,Queenstown,Sobrevivió,Tercera,Edad no registrada
+1,1,Mujer,62.0,80.0,No registrado,Sobrevivió,Primera,60 o más
+1,3,Mujer,15.0,14.4542,Cherbourg,Sobrevivió,Tercera,13 a 17
+1,2,Hombre,0.83,18.75,Southampton,Sobrevivió,Segunda,0 a 12
+0,3,Hombre,,7.2292,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,23.0,7.8542,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,18.0,8.3,Southampton,No sobrevivió,Tercera,18 a 29
+1,1,Mujer,39.0,83.1583,Cherbourg,Sobrevivió,Primera,30 a 44
+0,3,Hombre,21.0,8.6625,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,,8.05,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,3,Hombre,32.0,56.4958,Southampton,Sobrevivió,Tercera,30 a 44
+1,1,Hombre,,29.7,Cherbourg,Sobrevivió,Primera,Edad no registrada
+0,3,Hombre,20.0,7.925,Southampton,No sobrevivió,Tercera,18 a 29
+0,2,Hombre,16.0,10.5,Southampton,No sobrevivió,Segunda,13 a 17
+1,1,Mujer,30.0,31.0,Cherbourg,Sobrevivió,Primera,30 a 44
+0,3,Hombre,34.5,6.4375,Cherbourg,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,17.0,8.6625,Southampton,No sobrevivió,Tercera,13 a 17
+0,3,Hombre,42.0,7.55,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Hombre,,69.55,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,35.0,7.8958,Cherbourg,No sobrevivió,Tercera,30 a 44
+0,2,Hombre,28.0,33.0,Southampton,No sobrevivió,Segunda,18 a 29
+1,1,Mujer,,89.1042,Cherbourg,Sobrevivió,Primera,Edad no registrada
+0,3,Hombre,4.0,31.275,Southampton,No sobrevivió,Tercera,0 a 12
+0,3,Hombre,74.0,7.775,Southampton,No sobrevivió,Tercera,60 o más
+0,3,Mujer,9.0,15.2458,Cherbourg,No sobrevivió,Tercera,0 a 12
+1,1,Mujer,16.0,39.4,Southampton,Sobrevivió,Primera,13 a 17
+0,2,Mujer,44.0,26.0,Southampton,No sobrevivió,Segunda,30 a 44
+1,3,Mujer,18.0,9.35,Southampton,Sobrevivió,Tercera,18 a 29
+1,1,Mujer,45.0,164.8667,Southampton,Sobrevivió,Primera,45 a 59
+1,1,Hombre,51.0,26.55,Southampton,Sobrevivió,Primera,45 a 59
+1,3,Mujer,24.0,19.2583,Cherbourg,Sobrevivió,Tercera,18 a 29
+0,3,Hombre,,7.2292,Cherbourg,No sobrevivió,Tercera,Edad no registrada
+0,3,Hombre,41.0,14.1083,Southampton,No sobrevivió,Tercera,30 a 44
+0,2,Hombre,21.0,11.5,Southampton,No sobrevivió,Segunda,18 a 29
+1,1,Mujer,48.0,25.9292,Southampton,Sobrevivió,Primera,45 a 59
+0,3,Mujer,,69.55,Southampton,No sobrevivió,Tercera,Edad no registrada
+0,2,Hombre,24.0,13.0,Southampton,No sobrevivió,Segunda,18 a 29
+1,2,Mujer,42.0,13.0,Southampton,Sobrevivió,Segunda,30 a 44
+1,2,Mujer,27.0,13.8583,Cherbourg,Sobrevivió,Segunda,18 a 29
+0,1,Hombre,31.0,50.4958,Southampton,No sobrevivió,Primera,30 a 44
+0,3,Hombre,,9.5,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,3,Hombre,4.0,11.1333,Southampton,Sobrevivió,Tercera,0 a 12
+0,3,Hombre,26.0,7.8958,Southampton,No sobrevivió,Tercera,18 a 29
+1,1,Mujer,47.0,52.5542,Southampton,Sobrevivió,Primera,45 a 59
+0,1,Hombre,33.0,5.0,Southampton,No sobrevivió,Primera,30 a 44
+0,3,Hombre,47.0,9.0,Southampton,No sobrevivió,Tercera,45 a 59
+1,2,Mujer,28.0,24.0,Cherbourg,Sobrevivió,Segunda,18 a 29
+1,3,Mujer,15.0,7.225,Cherbourg,Sobrevivió,Tercera,13 a 17
+0,3,Hombre,20.0,9.8458,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,19.0,7.8958,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Hombre,,7.8958,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,1,Mujer,56.0,83.1583,Cherbourg,Sobrevivió,Primera,45 a 59
+1,2,Mujer,25.0,26.0,Southampton,Sobrevivió,Segunda,18 a 29
+0,3,Hombre,33.0,7.8958,Southampton,No sobrevivió,Tercera,30 a 44
+0,3,Mujer,22.0,10.5167,Southampton,No sobrevivió,Tercera,18 a 29
+0,2,Hombre,28.0,10.5,Southampton,No sobrevivió,Segunda,18 a 29
+0,3,Hombre,25.0,7.05,Southampton,No sobrevivió,Tercera,18 a 29
+0,3,Mujer,39.0,29.125,Queenstown,No sobrevivió,Tercera,30 a 44
+0,2,Hombre,27.0,13.0,Southampton,No sobrevivió,Segunda,18 a 29
+1,1,Mujer,19.0,30.0,Southampton,Sobrevivió,Primera,18 a 29
+0,3,Mujer,,23.45,Southampton,No sobrevivió,Tercera,Edad no registrada
+1,1,Hombre,26.0,30.0,Cherbourg,Sobrevivió,Primera,18 a 29
+0,3,Hombre,32.0,7.75,Queenstown,No sobrevivió,Tercera,30 a 44

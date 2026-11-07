@@ -36,6 +36,9 @@ jobs:
           rm -f AE1/resultados/resumen_titanic.txt
           rm -f AE1/resultados/titanic_transformado.csv
           rm -f AE2/resultados/resumen_dataframe.txt
+          rm -f AE3/datos/titanic_preparado.csv
+          rm -f AE3/resultados/*.csv
+          rm -f AE3/resultados/resumen_dataframe_ae3.txt
 
       - name: Ejecutar notebook de AE1
         run: >-
@@ -53,6 +56,17 @@ jobs:
           --inplace
           --ExecutePreprocessor.timeout=300
 
+      - name: Ejecutar pruebas de AE3
+        run: python -m pytest -q AE3/tests
+
+      - name: Ejecutar notebook de AE3
+        run: >-
+          jupyter nbconvert
+          --to notebook
+          --execute AE3/notebooks/transformacion_enriquecimiento_titanic.ipynb
+          --inplace
+          --ExecutePreprocessor.timeout=300
+
       - name: Verificar archivos generados
         shell: bash
         run: |
@@ -63,6 +77,10 @@ jobs:
           grep -q "Identificador del dataset: BIT/titanic-dataset" AE2/resultados/resumen_dataframe.txt
           grep -q "Cantidad de filas: 891" AE2/resultados/resumen_dataframe.txt
           grep -q "Cantidad de columnas: 15" AE2/resultados/resumen_dataframe.txt
+          test -s AE3/datos/titanic_preparado.csv
+          test -s AE3/resultados/resumen_dataframe_ae3.txt
+          test "$(find AE3/resultados -name 'pregunta_*.csv' | wc -l)" -eq 5
+          python -c "import pandas as pd; df = pd.read_csv('AE3/datos/titanic_preparado.csv'); assert df.shape == (891, 9), df.shape; assert int(df['sobrevivio'].sum()) == 342"
 
       - name: Guardar resultados de la ejecución
         uses: actions/upload-artifact@v4
@@ -73,6 +91,9 @@ jobs:
             AE1/resultados/
             AE2/notebooks/exploracion_titanic.ipynb
             AE2/resultados/
+            AE3/notebooks/transformacion_enriquecimiento_titanic.ipynb
+            AE3/datos/
+            AE3/resultados/
 
       - name: Publicar resultados generados en main
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
@@ -81,6 +102,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add AE1/notebooks/actividad_titanic.ipynb AE1/resultados
           git add AE2/notebooks/exploracion_titanic.ipynb AE2/resultados
+          git add AE3/notebooks/transformacion_enriquecimiento_titanic.ipynb AE3/datos AE3/resultados
           if ! git diff --cached --quiet; then
             git commit -m "Actualizar resultados automáticos de AE1 y AE2"
             git push origin HEAD:main
