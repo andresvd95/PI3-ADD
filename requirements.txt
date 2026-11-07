@@ -3,3 +3,4 @@ ipykernel>=6.0
 nbconvert>=7.0
 pandas>=2.0
 pytest>=8.0
+python-docx>=1.1

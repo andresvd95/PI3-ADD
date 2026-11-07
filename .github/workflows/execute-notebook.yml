@@ -104,6 +104,6 @@ jobs:
           git add AE2/notebooks/exploracion_titanic.ipynb AE2/resultados
           git add "AE3 Proyecto integrador - Transformación y Enriquecimiento de Datos/notebooks/transformacion_enriquecimiento_titanic.ipynb" "AE3 Proyecto integrador - Transformación y Enriquecimiento de Datos/datos" "AE3 Proyecto integrador - Transformación y Enriquecimiento de Datos/resultados"
           if ! git diff --cached --quiet; then
-            git commit -m "Actualizar resultados automáticos de AE1 y AE2"
+            git commit -m "Actualizar resultados automáticos de AE1, AE2 y AE3"
             git push origin HEAD:main
           fi
