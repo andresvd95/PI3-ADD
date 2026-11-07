@@ -4,8 +4,9 @@ $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 $source = Join-Path $RepoRoot 'AE2\documento\AE2_Necesidad_analitica_Titanic_Santiago_Andres_Valencia_Duque.docx'
-$outDir = Join-Path $RepoRoot 'AE3\documento'
-$target = Join-Path $outDir 'AE3_Transformacion_Titanic_Santiago_Andres_Valencia_Duque.docx'
+$activityFolder = 'AE3 Proyecto integrador - Transformaci' + [char]0x00F3 + 'n y Enriquecimiento de Datos'
+$outDir = Join-Path $RepoRoot (Join-Path $activityFolder 'documento')
+$target = Join-Path $outDir 'AE3_Titanic.docx'
 New-Item -ItemType Directory -Force -Path $outDir | Out-Null
 Copy-Item -LiteralPath $source -Destination $target -Force
 

@@ -16,9 +16,9 @@ total y supervivencia por clase, sexo, grupo de edad y puerto. Cada tabla incluy
 conteos, tasa de supervivencia y participación de pasajeros.
 
 ```text
-AE3/
+AE3 Proyecto integrador - Transformación y Enriquecimiento de Datos/
   datos/titanic_preparado.csv
-  documento/AE3_Transformacion_Titanic_Santiago_Andres_Valencia_Duque.docx
+  documento/AE3_Titanic.docx
   notebooks/transformacion_enriquecimiento_titanic.ipynb
   resultados/pregunta_*.csv
   resultados/resumen_dataframe_ae3.txt
@@ -77,13 +77,13 @@ Desde la raíz del repositorio:
 python -m pip install -r requirements.txt
 jupyter nbconvert --to notebook --execute --inplace AE1/notebooks/actividad_titanic.ipynb
 jupyter nbconvert --to notebook --execute --inplace AE2/notebooks/exploracion_titanic.ipynb
-jupyter nbconvert --to notebook --execute --inplace AE3/notebooks/transformacion_enriquecimiento_titanic.ipynb --ExecutePreprocessor.timeout=300
-python -m pytest -q AE1/tests AE3/tests
+jupyter nbconvert --to notebook --execute --inplace "AE3 Proyecto integrador - Transformación y Enriquecimiento de Datos/notebooks/transformacion_enriquecimiento_titanic.ipynb" --ExecutePreprocessor.timeout=300
+python -m pytest -q AE1/tests "AE3 Proyecto integrador - Transformación y Enriquecimiento de Datos/tests"
 ```
 
 El notebook de AE3 usa rutas relativas, regenera los CSV y el TXT, y comprueba
 que cada tabla conserve 891 pasajeros y 342 sobrevivientes. El proceso también
-puede ejecutarse con `python AE3/src/transformar_titanic.py`.
+puede ejecutarse con `python "AE3 Proyecto integrador - Transformación y Enriquecimiento de Datos/src/transformar_titanic.py"`.
 
 El segundo notebook crea `AE2/resultados/resumen_dataframe.txt` con el
 identificador, el split, las dimensiones, los nombres y tipos de columnas y los

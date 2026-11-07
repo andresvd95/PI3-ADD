@@ -17,6 +17,8 @@ COLUMNAS_ENTRADA = [
     "ciudad_embarque",
 ]
 
+CARPETA_AE3 = "AE3 Proyecto integrador - Transformación y Enriquecimiento de Datos"
+
 
 def localizar_raiz(inicio: Path | None = None) -> Path:
     """Localiza la raíz del repositorio desde el directorio de ejecución."""
@@ -176,8 +178,8 @@ def ejecutar(raiz: Path | None = None) -> tuple[pd.DataFrame, dict[str, pd.DataF
     """Ejecuta la transformación, valida y exporta todas las evidencias de AE3."""
     raiz = raiz or localizar_raiz()
     entrada = raiz / "AE1" / "resultados" / "titanic_transformado.csv"
-    salida_datos = raiz / "AE3" / "datos"
-    salida_resultados = raiz / "AE3" / "resultados"
+    salida_datos = raiz / CARPETA_AE3 / "datos"
+    salida_resultados = raiz / CARPETA_AE3 / "resultados"
     salida_datos.mkdir(parents=True, exist_ok=True)
     salida_resultados.mkdir(parents=True, exist_ok=True)
 
