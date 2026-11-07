@@ -45,21 +45,6 @@ class Informe:
             h.font.size = Pt(tam)
             h.font.bold = True
             h.font.color.rgb = None
-        self._numero_de_pagina()
-
-    def _numero_de_pagina(self) -> None:
-        parrafo = self.doc.sections[0].footer.paragraphs[0]
-        parrafo.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        run = parrafo.add_run()
-        for tipo, texto in (("begin", None), (None, "PAGE"), ("end", None)):
-            if tipo:
-                nodo = OxmlElement("w:fldChar")
-                nodo.set(qn("w:fldCharType"), tipo)
-            else:
-                nodo = OxmlElement("w:instrText")
-                nodo.set(qn("xml:space"), "preserve")
-                nodo.text = texto
-            run._r.append(nodo)
 
     def titulo(self, texto: str, nivel: int = 1) -> None:
         self.doc.add_heading(texto, level=nivel)
@@ -163,320 +148,174 @@ def construir(raiz: Path) -> Path:
 
     w = Informe()
 
-    # Portada sencilla
-    for _ in range(5):
-        w.parrafo("", centrado=True)
     t = w.doc.add_paragraph(TITULO)
-    t.alignment = WD_ALIGN_PARAGRAPH.CENTER
     t.runs[0].bold = True
-    t.runs[0].font.size = Pt(20)
-    w.parrafo("Avance de la actividad AE3", centrado=True)
-    w.parrafo("", centrado=True)
-    w.parrafo(AUTOR, centrado=True)
-    w.parrafo("Proyecto Integrado III - Analítica de Datos", centrado=True)
-    w.parrafo("Docente: Andrés Felipe Callejas", centrado=True)
-    w.parrafo("Institución Universitaria Digital de Antioquia", centrado=True)
-    w.parrafo("Medellín, noviembre de 2026", centrado=True)
-    w.salto()
+    t.runs[0].font.size = Pt(16)
+    w.parrafo(f"{AUTOR} - Proyecto Integrado III, Analítica de Datos - Avance AE3")
 
-    # Índices
-    w.titulo("Contenido")
-    for linea in (
-        "1. Introducción",
-        "2. Necesidad, preguntas y alcance",
-        "3. Metodología",
-        "    3.1 Datos de entrada y copia sin modificar",
-        "    3.2 Transformaciones y reglas de calidad",
-        "    3.3 Enriquecimiento de la información",
-        "    3.4 Procedimiento para responder cada pregunta",
-        "    3.5 Archivos generados y reproducción",
-        "4. Diccionario de datos actualizado",
-        "5. Resultados y discusión",
-        "6. Conclusiones del avance",
-        "7. Referencias",
-    ):
-        p = w.doc.add_paragraph(linea)
-        p.paragraph_format.space_after = Pt(2)
-    w.titulo("Índice de tablas")
-    indice_tablas = w.doc.add_paragraph()  # se completa al final, cuando ya se conocen las tablas
-    w.salto()
-
-    # 1. Introducción
-    w.titulo("1. Introducción")
+    # 1. Metodología
+    w.titulo("1. Metodología")
     w.parrafo(
-        "Este documento recoge el avance de la tercera actividad del proyecto integrador. "
-        "En la actividad anterior (AE2) se definió una necesidad analítica sobre el dataset "
-        "BIT/titanic-dataset, que es público y está en Hugging Face. En esta etapa se prepara ese "
-        f"dataset por medio de código y se responden descriptivamente las preguntas de negocio. Se trabajaron {n} registros "
-        "de pasajeros, sin eliminar ninguno, y se construyeron cinco tablas de resultados que "
-        "quedan listas para graficarse en AE4."
+        "Se mantiene la necesidad de AE2: describir cómo se distribuyó la supervivencia observada "
+        "entre los pasajeros registrados del dataset BIT/titanic-dataset (split train) según clase, "
+        "sexo, edad y puerto de embarque. La pregunta compuesta de AE2 se dividió en cinco preguntas "
+        "para obtener una tabla por pregunta y poder graficarlas por separado en AE4; esto no cambia "
+        "la necesidad ni las variables. Se usó como entrada el CSV de AE1 "
+        "(AE1/resultados/titanic_transformado.csv), con 891 filas y seis variables, y se guardó una "
+        "copia sin modificar (df_original) para comparar el antes y el después. Las preguntas y las "
+        "variables usadas son:"
     )
-    w.parrafo(
-        f"En total sobrevivieron {sobrev} de los {n} pasajeros registrados, es decir {num(tasa_total)} %. "
-        "Las diferencias entre grupos se interpretan como asociaciones dentro de este dataset, "
-        "no como causas."
-    )
-
-    # 2. Necesidad
-    w.titulo("2. Necesidad, preguntas y alcance")
-    w.parrafo(
-        "La necesidad se mantiene igual que en AE2. Un equipo académico que prepara material sobre "
-        "seguridad marítima necesita describir cómo se distribuyó la supervivencia observada entre "
-        "los pasajeros registrados según su clase, su sexo, su edad y su puerto de embarque. Es un "
-        "escenario hipotético de estudio y el análisis es solamente descriptivo."
-    )
-    w.parrafo(
-        "En AE2 la pregunta de negocio se había planteado de forma compuesta. Para esta entrega se "
-        "dividió en cinco preguntas operativas, porque la rúbrica pide una tabla por pregunta y de "
-        "ese modo cada resultado se puede graficar por separado en AE4. Esta división no cambia la "
-        "necesidad ni las variables principales, solo organiza mejor la respuesta."
-    )
-    w.tabla(
-        "Preguntas de negocio, variables necesarias y resultado esperado",
-        ["N.º", "Pregunta de negocio", "Variables", "Resultado esperado"],
-        [
-            ["1", "¿Cuál fue la supervivencia total registrada?", "sobrevivio", "Conteos y tasa total"],
-            ["2", "¿Cómo varió la supervivencia según la clase?", "sobrevivio, clase_pasajero", "Conteos y tasa por clase"],
-            ["3", "¿Cómo varió según el sexo registrado?", "sobrevivio, sexo", "Conteos y tasa por sexo"],
-            ["4", "¿Cómo varió según el grupo de edad?", "sobrevivio, edad", "Conteos y tasa por intervalo de edad"],
-            ["5", "¿Cómo varió según el puerto de embarque?", "sobrevivio, ciudad_embarque", "Conteos y tasa por puerto"],
-        ],
-    )
-    w.parrafo(
-        "Un ajuste de alcance: la variable tarifa se conserva en el dataset preparado y se describe "
-        "estadísticamente, pero no se usa para ninguna pregunta principal. En AE2 se había definido "
-        "como complementaria y el dataset no indica en qué moneda está expresada, así que comparar "
-        "tarifas entre grupos no sería confiable."
-    )
-
-    # 3. Metodología
-    w.titulo("3. Metodología")
-    w.titulo("3.1 Datos de entrada y copia sin modificar", 2)
-    w.parrafo(
-        "Se usó como entrada el archivo AE1/resultados/titanic_transformado.csv, que se generó en AE1 "
-        "a partir del split train del dataset BIT/titanic-dataset. Tiene 891 filas y las seis "
-        "variables que se necesitan: sobrevivio, clase_pasajero, sexo, edad, tarifa y ciudad_embarque. "
-        "Se prefirió este archivo local porque permite reproducir la actividad sin volver a "
-        "descargar el dataset en cada ejecución."
-    )
-    w.parrafo(
-        "Al cargar los datos se guarda una copia sin modificar (df_original). Todas las "
-        "transformaciones se hacen sobre otra copia, de modo que siempre se puede comparar el "
-        "antes y el después."
-    )
-
-    w.titulo("3.2 Transformaciones y reglas de calidad", 2)
-    w.parrafo("Las operaciones aplicadas fueron las siguientes:")
     w.lista(
         [
-            "Tipos de datos: sobrevivio y clase_pasajero ya eran enteros, pero se convirtieron a int8 "
-            "porque solo toman valores pequeños. Edad y tarifa se convirtieron a numéricas de forma "
-            "explícita y no hubo valores que se perdieran en la conversión.",
-            "Validación de dominios: sobrevivio solo puede ser 0 o 1 y clase_pasajero solo 1, 2 o 3. "
-            "Además se comprobó que no hubiera edades ni tarifas negativas. El código se detiene con "
-            "un error si alguna regla falla; en esta ejecución ninguna falló.",
-            f"Normalización de categorías: la variable sexo venía en inglés (male y female). Los {n} "
-            "valores se pasaron a Hombre y Mujer. No se encontraron espacios sobrantes ni "
-            "mayúsculas inconsistentes en el puerto.",
-            f"Valores faltantes: hay {aud['edades_no_registradas']} edades y {aud['puertos_no_registrados']} "
-            "puertos sin registrar. La edad se deja vacía en la columna edad, porque inventar un valor "
-            "(por ejemplo la media) cambiaría las estadísticas, y en grupo_edad se clasifica como "
-            "Edad no registrada. Los dos puertos faltantes se rotulan como No registrado para "
-            "que los pasajeros sigan apareciendo en los totales.",
-            f"Duplicados: hay {aud['coincidencias_en_seis_variables']} filas que coinciden en las seis variables. "
-            "No se eliminaron porque el dataset no tiene un identificador de pasajero y dos personas "
-            "distintas pueden tener los mismos atributos. Eliminarlas habría cambiado el total de "
-            "pasajeros sin una razón comprobable.",
-            f"Selección de columnas y registros: se conservaron las seis columnas pertinentes y "
-            f"los {n} registros, porque todas las variables se usan en alguna pregunta o en el "
-            "apartado descriptivo.",
+            "P1. ¿Cuál fue la supervivencia total? Variable: sobrevivio.",
+            "P2. ¿Cómo varió según la clase? Variables: sobrevivio, clase_pasajero.",
+            "P3. ¿Cómo varió según el sexo? Variables: sobrevivio, sexo.",
+            "P4. ¿Cómo varió según el grupo de edad? Variables: sobrevivio, edad.",
+            "P5. ¿Cómo varió según el puerto de embarque? Variables: sobrevivio, ciudad_embarque.",
         ]
     )
-    w.tabla(
-        "Comparación del DataFrame antes y después de la transformación",
-        ["Control", "Antes", "Después", "Decisión"],
+    w.parrafo(
+        "La tarifa se conserva y se describe, pero no se usa en ninguna pregunta: en AE2 era una "
+        "variable complementaria y la fuente no indica su moneda."
+    )
+
+    w.titulo("Transformaciones y reglas de calidad", 2)
+    w.lista(
         [
-            ["Filas", str(aud["filas_antes"]), str(aud["filas_despues"]), "No se eliminaron registros"],
-            ["Columnas", str(aud["columnas_antes"]), str(aud["columnas_despues"]), "Se añadieron 3 variables"],
-            ["Tipo de sobrevivio y clase_pasajero", "int64", "int8", "Se compactó el tipo"],
-            ["Edad nula", str(aud["edades_no_registradas"]), str(int(final["edad"].isna().sum())), "Se conserva; la categoría se marca en grupo_edad"],
-            ["Puerto nulo", str(aud["puertos_no_registrados"]), str(int(final["ciudad_embarque"].isna().sum())), "Se rotula como No registrado"],
-            ["Filas con atributos coincidentes", str(aud["coincidencias_en_seis_variables"]), str(aud["coincidencias_en_seis_variables"]), "No se asumen duplicados"],
-            ["Valores de sexo cambiados", "male / female", "Hombre / Mujer", f"{n} registros afectados"],
-        ],
+            "Tipos: sobrevivio y clase_pasajero ya eran enteros y se pasaron de int64 a int8; edad y "
+            "tarifa se convirtieron a numéricas sin perder valores.",
+            "Validaciones: sobrevivio solo puede ser 0 o 1, clase_pasajero solo 1, 2 o 3 y no puede "
+            "haber edades ni tarifas negativas. Ninguna regla falló.",
+            f"Categorías: sexo pasó de male y female a Hombre y Mujer en los {n} registros.",
+            f"Faltantes: {aud['edades_no_registradas']} edades y {aud['puertos_no_registrados']} puertos. "
+            "La edad se dejó vacía, porque imputarla (por ejemplo con la media) alteraría las "
+            "estadísticas, y se clasificó como Edad no registrada en grupo_edad. Los dos puertos "
+            "pasaron a la categoría No registrado para que sigan en los totales.",
+            f"Duplicados: hay {aud['coincidencias_en_seis_variables']} filas con las seis variables "
+            "iguales. No se eliminaron porque el dataset no tiene identificador de pasajero y dos "
+            "personas distintas pueden coincidir en todos los atributos.",
+            f"Resultado: no se eliminó ninguna fila ({aud['filas_antes']} antes y {aud['filas_despues']} "
+            f"después) y las columnas pasaron de {aud['columnas_antes']} a {aud['columnas_despues']}.",
+        ]
     )
 
-    w.titulo("3.3 Enriquecimiento de la información", 2)
+    w.titulo("Enriquecimiento", 2)
     w.parrafo(
-        "Se añadieron tres variables calculadas a partir de los datos existentes. No se unió "
-        "ninguna otra tabla, por lo que no hay riesgo de que una unión multiplique registros. "
-        "Para cada pregunta se calcularon, además, los pasajeros, los sobrevivientes, los no "
-        "sobrevivientes, la tasa de supervivencia y la participación de cada grupo sobre el total."
+        "Se crearon tres variables con los datos existentes; no se unió ninguna otra tabla, así que no "
+        "hay riesgo de multiplicar registros."
     )
-    w.tabla(
-        "Variables incorporadas, regla de cálculo y utilidad",
-        ["Variable", "Regla", "Utilidad para las preguntas"],
+    w.lista(
         [
-            ["estado_supervivencia", "0 pasa a No sobrevivió y 1 pasa a Sobrevivió", "Hace legibles las tablas y los futuros gráficos"],
-            ["clase", "1, 2 y 3 pasan a Primera, Segunda y Tercera", "Etiqueta la pregunta 2 y ordena la presentación"],
-            ["grupo_edad", "Intervalos de 0 a 12, 13 a 17, 18 a 29, 30 a 44, 45 a 59 y 60 o más; edad vacía pasa a Edad no registrada", "Permite responder la pregunta 4 sin comparar 88 edades distintas"],
-        ],
-    )
-    w.parrafo(
-        "Los intervalos de edad se definieron para separar la niñez, la adolescencia, la edad adulta "
-        "temprana, la adultez media y las personas mayores. Son un criterio propio del análisis y "
-        "otros cortes podrían dar tasas algo distintas."
-    )
-    w.parrafo(
-        "Las fórmulas de las medidas de cada tabla son: no sobrevivientes = pasajeros - "
-        "sobrevivientes; tasa de supervivencia (%) = sobrevivientes / pasajeros x 100; participación (%) = "
-        f"pasajeros del grupo / {n} x 100."
+            "estado_supervivencia: 0 = No sobrevivió y 1 = Sobrevivió. Hace legibles las tablas.",
+            "clase: 1 = Primera, 2 = Segunda y 3 = Tercera. Etiqueta la pregunta 2.",
+            "grupo_edad: intervalos de 0 a 12, 13 a 17, 18 a 29, 30 a 44, 45 a 59 y 60 o más, más "
+            "Edad no registrada. Permite responder la pregunta 4. Los cortes son un criterio propio.",
+        ]
     )
 
-    w.titulo("3.4 Procedimiento para responder cada pregunta", 2)
+    w.titulo("Procedimiento para responder cada pregunta", 2)
     w.parrafo(
-        "Para cada pregunta se agrupó el DataFrame final por la variable correspondiente (clase, "
-        "sexo, grupo_edad o ciudad_embarque) y se calcularon los conteos y las tasas. La pregunta "
-        "1 se resuelve con el total sin agrupar. Después de construir las tablas el código verifica "
-        f"que cada una sume {n} pasajeros y {sobrev} sobrevivientes, y que ninguna tasa quede fuera "
-        "del rango de 0 a 100. Si alguna comprobación falla, la ejecución se detiene."
+        "Se agrupó el DataFrame final por clase, sexo, grupo_edad y ciudad_embarque (la pregunta 1 usa "
+        "el total) y se calcularon: no sobrevivientes = pasajeros - sobrevivientes; tasa de supervivencia "
+        f"(%) = sobrevivientes / pasajeros x 100; participación (%) = pasajeros del grupo / {n} x 100. "
+        f"El código comprueba que cada tabla sume {n} pasajeros y {sobrev} sobrevivientes y que ninguna "
+        "tasa salga del rango de 0 a 100. El notebook exporta automáticamente el dataset preparado, las "
+        "cinco tablas en CSV y el resumen descriptivo en TXT, con rutas relativas."
     )
 
-    w.titulo("3.5 Archivos generados y reproducción", 2)
-    w.parrafo(
-        "El notebook y el script transformar_titanic.py exportan automáticamente, con rutas relativas, "
-        "los archivos de la tabla siguiente. Cada ejecución los reemplaza, de manera que su contenido "
-        "siempre corresponde a los datos de esa ejecución."
-    )
+    # 2. Diccionario
+    w.titulo("2. Diccionario de datos actualizado")
     w.tabla(
-        "Archivos generados por el código",
-        ["Archivo", "Contenido"],
-        [
-            ["datos/titanic_preparado.csv", f"Dataset transformado y enriquecido ({n} filas y 9 columnas)"],
-            ["resultados/pregunta_1_supervivencia_total.csv", "Respuesta a la pregunta 1"],
-            ["resultados/pregunta_2_supervivencia_por_clase.csv", "Respuesta a la pregunta 2"],
-            ["resultados/pregunta_3_supervivencia_por_sexo.csv", "Respuesta a la pregunta 3"],
-            ["resultados/pregunta_4_supervivencia_por_grupo_edad.csv", "Respuesta a la pregunta 4"],
-            ["resultados/pregunta_5_supervivencia_por_puerto.csv", "Respuesta a la pregunta 5"],
-            ["resultados/resumen_dataframe_ae3.txt", "Filas, columnas, tipos, nulos y estadísticas descriptivas del DataFrame final"],
-        ],
-    )
-
-    # 4. Diccionario
-    w.titulo("4. Diccionario de datos actualizado")
-    w.parrafo(
-        "La tabla incluye las variables originales utilizadas y las tres incorporadas en esta etapa."
-    )
-    w.tabla(
-        "Diccionario de datos del dataset preparado",
+        "Variables utilizadas e incorporadas",
         ["Variable", "Significado", "Tipo", "Unidad o valores", "Origen"],
         [
             ["sobrevivio", "Indica si el pasajero sobrevivió", "Entero", "0 = no, 1 = sí", "Original"],
             ["clase_pasajero", "Clase del pasaje, codificada", "Entero", "1, 2 o 3", "Original"],
-            ["sexo", "Sexo registrado del pasajero", "Texto", "Hombre o Mujer", "Original, normalizada"],
+            ["sexo", "Sexo registrado", "Texto", "Hombre o Mujer", "Original, normalizada"],
             ["edad", "Edad del pasajero", "Decimal", "Años", "Original"],
-            ["tarifa", "Valor pagado por el pasaje", "Decimal", "Moneda no indicada en la fuente", "Original"],
+            ["tarifa", "Valor pagado por el pasaje", "Decimal", "Moneda no indicada", "Original"],
             ["ciudad_embarque", "Puerto de embarque", "Texto", "Cherbourg, Queenstown, Southampton o No registrado", "Original, normalizada"],
             ["estado_supervivencia", "Etiqueta de sobrevivio", "Texto", "Sobrevivió o No sobrevivió", "Incorporada"],
             ["clase", "Etiqueta de clase_pasajero", "Texto", "Primera, Segunda o Tercera", "Incorporada"],
-            ["grupo_edad", "Intervalo al que pertenece la edad", "Texto", "Años; incluye Edad no registrada", "Incorporada"],
+            ["grupo_edad", "Intervalo de edad", "Texto", "Años; incluye Edad no registrada", "Incorporada"],
         ],
     )
 
-    # 5. Resultados
-    w.titulo("5. Resultados y discusión")
-    w.parrafo(
-        "Las tablas siguientes salen directamente de los archivos CSV exportados por el notebook. "
-        "En todas, la tasa de supervivencia se calcula dentro de cada grupo y la participación "
-        "indica qué parte de los pasajeros representa ese grupo."
-    )
+    # 3. Resultados
+    w.titulo("3. Resultados y discusión")
 
-    w.titulo("5.1 Pregunta 1: supervivencia total", 2)
+    w.titulo("Pregunta 1: supervivencia total", 2)
     w.tabla("Supervivencia total", [e.format("Grupo") for e in ENCABEZADO_RESULTADO],
             filas_resultado(res["pregunta_1_supervivencia_total"], "grupo"))
     w.parrafo(
-        f"Sobrevivieron {sobrev} de {n} pasajeros, con una tasa de {num(tasa_total)} %. Este valor sirve "
-        "como referencia para ver si cada grupo estuvo por encima o por debajo del promedio."
+        f"Sobrevivieron {sobrev} de {n} pasajeros ({num(tasa_total)} %). Este valor es la referencia "
+        "para comparar los demás grupos."
     )
 
-    w.titulo("5.2 Pregunta 2: supervivencia por clase", 2)
+    w.titulo("Pregunta 2: supervivencia por clase", 2)
     w.tabla("Supervivencia por clase", [e.format("Clase") for e in ENCABEZADO_RESULTADO],
             filas_resultado(res["pregunta_2_supervivencia_por_clase"], "clase"))
     w.parrafo(
         f"La primera clase tuvo la tasa más alta ({num(clase.loc['Primera', 'tasa_supervivencia_pct'])} %), seguida de la "
-        f"segunda ({num(clase.loc['Segunda', 'tasa_supervivencia_pct'])} %) y la tercera ({num(clase.loc['Tercera', 'tasa_supervivencia_pct'])} %). La tercera clase fue "
-        f"además la más numerosa, con {int(clase.loc['Tercera', 'pasajeros'])} pasajeros "
-        f"({num(clase.loc['Tercera', 'participacion_pasajeros_pct'])} % del total). Esto muestra que la supervivencia no se "
-        "repartió de forma pareja entre las clases, pero no permite afirmar que la clase haya sido la causa."
+        f"segunda ({num(clase.loc['Segunda', 'tasa_supervivencia_pct'])} %) y la tercera ({num(clase.loc['Tercera', 'tasa_supervivencia_pct'])} %), que además fue la "
+        f"más numerosa ({int(clase.loc['Tercera', 'pasajeros'])} pasajeros, {num(clase.loc['Tercera', 'participacion_pasajeros_pct'])} % del total). "
+        "La supervivencia no se repartió de forma pareja, pero esto no prueba que la clase fuera la causa."
     )
 
-    w.titulo("5.3 Pregunta 3: supervivencia por sexo", 2)
+    w.titulo("Pregunta 3: supervivencia por sexo", 2)
     w.tabla("Supervivencia por sexo", [e.format("Sexo") for e in ENCABEZADO_RESULTADO],
             filas_resultado(res["pregunta_3_supervivencia_por_sexo"], "sexo"))
     w.parrafo(
         f"La tasa de las mujeres ({num(sexo.loc['Mujer', 'tasa_supervivencia_pct'])} %) fue {num(brecha_sexo)} puntos "
-        f"porcentuales mayor que la de los hombres ({num(sexo.loc['Hombre', 'tasa_supervivencia_pct'])} %), aunque ellos fueron "
-        f"mayoría ({num(sexo.loc['Hombre', 'participacion_pasajeros_pct'])} % de los pasajeros). Esta comparación no controla "
-        "otras variables como la clase o la edad."
+        f"porcentuales mayor que la de los hombres ({num(sexo.loc['Hombre', 'tasa_supervivencia_pct'])} %), aunque ellos eran "
+        f"el {num(sexo.loc['Hombre', 'participacion_pasajeros_pct'])} % de los pasajeros. La comparación no controla clase ni edad."
     )
 
-    w.titulo("5.4 Pregunta 4: supervivencia por grupo de edad", 2)
+    w.titulo("Pregunta 4: supervivencia por grupo de edad", 2)
     w.tabla("Supervivencia por grupo de edad", [e.format("Grupo de edad (años)") for e in ENCABEZADO_RESULTADO],
             filas_resultado(res["pregunta_4_supervivencia_por_grupo_edad"], "grupo_edad"))
     w.parrafo(
-        f"Entre los pasajeros con edad registrada, el grupo de {mejor_edad} años tuvo la tasa más alta "
+        f"Entre quienes tienen edad registrada, el grupo de {mejor_edad} años tuvo la tasa más alta "
         f"({num(edad.loc[mejor_edad, 'tasa_supervivencia_pct'])} %) y el de {peor_edad} años la más baja "
         f"({num(edad.loc[peor_edad, 'tasa_supervivencia_pct'])} %). Los {int(edad.loc['Edad no registrada', 'pasajeros'])} pasajeros sin edad "
-        f"({num(edad.loc['Edad no registrada', 'participacion_pasajeros_pct'])} % del total) se muestran aparte y limitan esta "
-        "comparación, porque no se sabe a qué grupo pertenecen. Además, el grupo de 60 años o más "
-        f"solo tiene {int(edad.loc['60 o más', 'pasajeros'])} pasajeros y su tasa es poco estable."
+        f"({num(edad.loc['Edad no registrada', 'participacion_pasajeros_pct'])} %) limitan la comparación, y el grupo de 60 o más "
+        f"solo tiene {int(edad.loc['60 o más', 'pasajeros'])} pasajeros, por lo que su tasa es poco estable."
     )
 
-    w.titulo("5.5 Pregunta 5: supervivencia por puerto de embarque", 2)
+    w.titulo("Pregunta 5: supervivencia por puerto de embarque", 2)
     w.tabla("Supervivencia por puerto de embarque", [e.format("Puerto de embarque") for e in ENCABEZADO_RESULTADO],
             filas_resultado(res["pregunta_5_supervivencia_por_puerto"], "puerto_embarque"))
     w.parrafo(
         f"{mejor_puerto} tuvo la tasa más alta entre los puertos registrados "
         f"({num(puerto.loc[mejor_puerto, 'tasa_supervivencia_pct'])} %) y {peor_puerto} la más baja "
-        f"({num(puerto.loc[peor_puerto, 'tasa_supervivencia_pct'])} %). Southampton fue el puerto de la mayoría de los "
-        f"pasajeros ({num(puerto.loc['Southampton', 'participacion_pasajeros_pct'])} %). Los dos pasajeros sin puerto sobrevivieron "
-        "ambos, pero con solo dos casos ese 100 % no se puede interpretar como un patrón."
+        f"({num(puerto.loc[peor_puerto, 'tasa_supervivencia_pct'])} %), con la mayoría de los pasajeros "
+        f"({num(puerto.loc['Southampton', 'participacion_pasajeros_pct'])} %). Los dos casos sin puerto sobrevivieron, "
+        "pero con solo dos registros ese 100 % no es un patrón."
     )
 
-    w.titulo("5.6 Limitaciones de las respuestas", 2)
-    w.lista(
-        [
-            "La ficha de Hugging Face no explica de dónde vienen originalmente los datos ni indica "
-            "si son sintéticos, por eso los resultados describen este archivo y no se generalizan.",
-            "No hay identificador de pasajero, así que no se puede confirmar si las 120 filas con "
-            "atributos coincidentes son personas distintas.",
-            "Hay 177 edades y 2 puertos sin registrar.",
-            "Cada pregunta se analizó por separado: las diferencias por clase, sexo, edad y puerto "
-            "pueden estar mezcladas entre sí y no se midió su efecto conjunto.",
-            f"La tarifa tiene {tarifa_cero} valores en cero y no se conoce su moneda, por lo que se "
-            "conserva solo como dato descriptivo.",
-        ]
-    )
-
-    # 6. Conclusiones
-    w.titulo("6. Conclusiones del avance")
+    w.titulo("Limitaciones", 2)
     w.parrafo(
-        "La transformación y el enriquecimiento permitieron responder las cinco preguntas con tablas "
-        "claras, reproducibles y que conservan los 891 registros. El análisis muestra que la "
-        f"supervivencia no fue pareja: la primera clase ({num(clase.loc['Primera', 'tasa_supervivencia_pct'])} %), las mujeres "
-        f"({num(sexo.loc['Mujer', 'tasa_supervivencia_pct'])} %) y el grupo de 0 a 12 años ({num(edad.loc['0 a 12', 'tasa_supervivencia_pct'])} %) estuvieron por "
-        f"encima de la tasa total ({num(tasa_total)} %), mientras que la tercera clase y los hombres estuvieron por debajo. "
-        f"Por puerto, Southampton concentró más pasajeros y {mejor_puerto} tuvo la tasa más alta."
-    )
-    w.parrafo(
-        "Queda sin resolver el origen del dataset, la identidad única de cada registro, la edad de "
-        "177 pasajeros y el efecto conjunto de las variables. En AE4 las tablas exportadas se "
-        "podrán representar gráficamente, conservando estas advertencias y evitando afirmaciones "
-        "causales."
+        "El análisis es descriptivo y solo vale para este archivo: la ficha de Hugging Face no explica "
+        "el origen de los datos ni si son sintéticos. Cada pregunta se analizó por separado, así que no "
+        "se midió el efecto conjunto de clase, sexo, edad y puerto. Faltan 177 edades y 2 puertos, no hay "
+        "identificador de pasajero para confirmar los 120 registros coincidentes y la tarifa tiene "
+        f"{tarifa_cero} valores en cero sin moneda conocida."
     )
 
-    # 7. Referencias
-    w.titulo("7. Referencias")
+    # 4. Conclusiones
+    w.titulo("4. Conclusiones del avance")
+    w.parrafo(
+        "Las cinco tablas responden las preguntas conservando los 891 registros. La supervivencia no fue "
+        f"pareja: la primera clase ({num(clase.loc['Primera', 'tasa_supervivencia_pct'])} %), las mujeres "
+        f"({num(sexo.loc['Mujer', 'tasa_supervivencia_pct'])} %) y el grupo de 0 a 12 años ({num(edad.loc['0 a 12', 'tasa_supervivencia_pct'])} %) "
+        f"superaron la tasa total ({num(tasa_total)} %), mientras que la tercera clase y los hombres quedaron por "
+        f"debajo, y {mejor_puerto} tuvo la mayor tasa por puerto. Quedan sin resolver el origen del dataset, "
+        "la identidad de cada registro, las edades faltantes y el efecto conjunto de las variables. "
+        "Las tablas exportadas quedan listas para graficarse en AE4."
+    )
+
+    # 5. Referencias
+    w.titulo("5. Referencias")
     for ref in (
         "Beijing Institute of Technology. (s. f.). BIT/titanic-dataset [Conjunto de datos]. Hugging Face. https://huggingface.co/datasets/BIT/titanic-dataset",
         "Hugging Face. (s. f.). Datasets documentation. https://huggingface.co/docs/datasets/",
@@ -485,10 +324,6 @@ def construir(raiz: Path) -> Path:
         p = w.doc.add_paragraph(ref)
         p.paragraph_format.left_indent = Pt(36)
         p.paragraph_format.first_line_indent = Pt(-36)
-
-    # Índice de tablas (ya se conocen todas)
-    for i, titulo in enumerate(w.tablas, start=1):
-        indice_tablas.add_run(f"Tabla {i}. {titulo}\n")
 
     propiedades = w.doc.core_properties
     propiedades.author = AUTOR
