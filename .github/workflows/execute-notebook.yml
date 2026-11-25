@@ -67,6 +67,17 @@ jobs:
           --inplace
           --ExecutePreprocessor.timeout=300
 
+      - name: Ejecutar pruebas de AE4
+        run: python -m pytest -q "AE4 Proyecto integrador - Métricas y Visualización/tests"
+
+      - name: Ejecutar notebook de AE4
+        run: >-
+          jupyter nbconvert
+          --to notebook
+          --execute "AE4 Proyecto integrador - Métricas y Visualización/notebooks/metricas_visualizacion_titanic.ipynb"
+          --inplace
+          --ExecutePreprocessor.timeout=300
+
       - name: Verificar archivos generados
         shell: bash
         run: |
@@ -81,6 +92,7 @@ jobs:
           test -s "AE3 Proyecto integrador - Transformación y Enriquecimiento de Datos/resultados/resumen_dataframe_ae3.txt"
           test "$(find "AE3 Proyecto integrador - Transformación y Enriquecimiento de Datos/resultados" -name 'pregunta_*.csv' | wc -l)" -eq 5
           python -c "import pandas as pd; df = pd.read_csv('AE3 Proyecto integrador - Transformación y Enriquecimiento de Datos/datos/titanic_preparado.csv'); assert df.shape == (891, 9), df.shape; assert int(df['sobrevivio'].sum()) == 342"
+          python -c "import pandas as pd; v = pd.read_csv('AE4 Proyecto integrador - Métricas y Visualización/resultados/verificacion_cifras_ae3.csv', encoding='utf-8-sig'); assert v['coincide_con_ae3'].all()"
 
       - name: Guardar resultados de la ejecución
         uses: actions/upload-artifact@v4
@@ -103,7 +115,8 @@ jobs:
           git add AE1/notebooks/actividad_titanic.ipynb AE1/resultados
           git add AE2/notebooks/exploracion_titanic.ipynb AE2/resultados
           git add "AE3 Proyecto integrador - Transformación y Enriquecimiento de Datos/notebooks/transformacion_enriquecimiento_titanic.ipynb" "AE3 Proyecto integrador - Transformación y Enriquecimiento de Datos/datos" "AE3 Proyecto integrador - Transformación y Enriquecimiento de Datos/resultados"
+          git add "AE4 Proyecto integrador - Métricas y Visualización/notebooks" "AE4 Proyecto integrador - Métricas y Visualización/resultados" "AE4 Proyecto integrador - Métricas y Visualización/figuras"
           if ! git diff --cached --quiet; then
-            git commit -m "Actualizar resultados automáticos de AE1, AE2 y AE3"
+            git commit -m "Actualizar resultados automáticos de AE1 a AE4"
             git push origin HEAD:main
           fi

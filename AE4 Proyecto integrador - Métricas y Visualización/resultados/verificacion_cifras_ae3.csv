@@ -1,0 +1,6 @@
+﻿tabla,grupos,pasajeros,sobrevivientes,coincide_con_ae3
+pregunta_1_supervivencia_total,1,891,342,True
+pregunta_2_supervivencia_por_clase,3,891,342,True
+pregunta_3_supervivencia_por_sexo,2,891,342,True
+pregunta_4_supervivencia_por_grupo_edad,7,891,342,True
+pregunta_5_supervivencia_por_puerto,4,891,342,True
