@@ -58,6 +58,7 @@ es descriptivo: muestra asociaciones, no causas.
 | Tablas complementarias y verificación | `resultados/complemento_*.csv`, `resultados/verificacion_cifras_ae3.csv` |
 | Pruebas | `tests/test_metricas.py` |
 | Documento final | `documento/*.docx` y `documento/*.pdf` |
+| Guion de la presentación (10 min) | `presentacion/guion_video.md` |
 
 ### Regenerar notebook, documento y PDF
 

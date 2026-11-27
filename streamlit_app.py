@@ -593,7 +593,7 @@ st.markdown(
 )
 
 paginas = {
-    "": [st.Page(inicio, title="Inicio", icon=":material/home:", url_path="inicio", default=True)],
+    "": [st.Page(inicio, title="Inicio", icon=":material/home:", default=True)],
     "Preguntas": [
         st.Page(p1, title="P1 · Supervivencia total", icon=":material/groups:", url_path="p1-total"),
         st.Page(p2, title="P2 · Por clase", icon=":material/airline_seat_recline_extra:", url_path="p2-clase"),
