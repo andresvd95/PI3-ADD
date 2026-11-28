@@ -202,7 +202,7 @@ def construir(raiz: Path, url_app: str = "") -> Path:
     d = r["datos"]
     brecha = s.loc["Mujer", "tasa_supervivencia_pct"] - s.loc["Hombre", "tasa_supervivencia_pct"]
     primera_cherbourg = (d.loc[d["ciudad_embarque"] == "Cherbourg", "clase"] == "Primera").mean() * 100
-    app_texto = url_app or "ejecución local con «streamlit run streamlit_app.py» (instrucciones en el README)"
+    app_texto = url_app or f"se ejecuta en local desde el repositorio {REPO} con «streamlit run streamlit_app.py»"
 
     w = Documento()
     doc = w.doc
@@ -463,6 +463,19 @@ def construir(raiz: Path, url_app: str = "") -> Path:
         "periodo), indicadores clave, los gráficos interactivos, la interpretación (qué muestran los datos, cómo "
         "responden la pregunta, qué decisión podrían apoyar y sus limitaciones) y la tabla descargable en CSV.")
     w.p(app_texto + ".", negrita_inicial="Acceso a la aplicación: ")
+    w.h("8.2 Acceso al repositorio y ejecución local de la aplicación", 2)
+    w.p(f"El código, los datos preparados y la aplicación están en el repositorio de GitHub {REPO}. La aplicación "
+        "no requiere publicación web: se ejecuta en el computador con Python 3.10 o superior siguiendo estos pasos "
+        "desde una terminal:")
+    w.lista([
+        f"Descargar el repositorio: git clone {REPO}.git (o, en GitHub, Code > Download ZIP y descomprimir).",
+        "Entrar a la carpeta del repositorio: cd PI3-ADD.",
+        "Instalar las dependencias: python -m pip install -r requirements.txt.",
+        "Ejecutar la aplicación: streamlit run streamlit_app.py.",
+        "Abrir en el navegador la dirección que muestra la terminal, normalmente http://localhost:8501.",
+    ], numerada=True)
+    w.p("La aplicación lee los datos que ya están en el repositorio (no descarga nada de internet) y en la página "
+        "«Verificación de datos» confirma que sus cifras coinciden con las del notebook de AE3.")
     w.p(f"{URL_VIDEO}. Una copia del video está en el repositorio, en {RUTA_VIDEO}.",
         negrita_inicial="Video de la presentación (demostración de la aplicación): ")
 
