@@ -7,7 +7,10 @@ por actividad para conservar el historial y facilitar su revisión.
 ## Entrega AE4: métricas, visualización y aplicación de Streamlit
 
 - **Documento final (PDF):** [`AE4 Proyecto integrador - Métricas y Visualización/documento/Proyecto_Integrado_III_Titanic_Santiago_Andres_Valencia_Duque.pdf`](<AE4 Proyecto integrador - Métricas y Visualización/documento/Proyecto_Integrado_III_Titanic_Santiago_Andres_Valencia_Duque.pdf>)
-- **Aplicación de Streamlit:** `streamlit_app.py` (raíz del repositorio). Enlace público: *pendiente de publicar en Streamlit Community Cloud* (ver «Publicar la aplicación»).
+- **Aplicación de Streamlit:** `streamlit_app.py` (raíz del repositorio); se ejecuta en local con `streamlit run streamlit_app.py` (ver «Publicar la aplicación» para el despliegue).
+- **Video de la presentación:** https://drive.google.com/file/d/1GNJfdiVdyXvI6ulyWalcQus901xy3TnL/view?usp=sharing
+- **Copia del video en el repositorio:** [`AE4 Proyecto integrador - Métricas y Visualización/presentacion/video_presentacion_ae4.mp4`](<AE4 Proyecto integrador - Métricas y Visualización/presentacion/video_presentacion_ae4.mp4>)
+- **Guion de la presentación:** [`AE4 Proyecto integrador - Métricas y Visualización/presentacion/guion_video.md`](<AE4 Proyecto integrador - Métricas y Visualización/presentacion/guion_video.md>)
 
 ### Ejecutar la aplicación
 
@@ -59,6 +62,7 @@ es descriptivo: muestra asociaciones, no causas.
 | Pruebas | `tests/test_metricas.py` |
 | Documento final | `documento/*.docx` y `documento/*.pdf` |
 | Guion de la presentación (10 min) | `presentacion/guion_video.md` |
+| Video de la presentación | `presentacion/video_presentacion_ae4.mp4` y enlace de Google Drive |
 
 ### Regenerar notebook, documento y PDF
 

@@ -30,6 +30,8 @@ DOCENTE = "Andrés Felipe Callejas"
 TITULO = "Supervivencia registrada de los pasajeros del Titanic: análisis descriptivo, métricas y visualización"
 REPO = "https://github.com/andresvd95/PI3-ADD"
 NOMBRE_ARCHIVO = "Proyecto_Integrado_III_Titanic_Santiago_Andres_Valencia_Duque"
+URL_VIDEO = "https://drive.google.com/file/d/1GNJfdiVdyXvI6ulyWalcQus901xy3TnL/view?usp=sharing"
+RUTA_VIDEO = "AE4 Proyecto integrador - Métricas y Visualización/presentacion/video_presentacion_ae4.mp4"
 
 
 def num(v: float, d: int = 2) -> str:
@@ -224,6 +226,7 @@ def construir(raiz: Path, url_app: str = "") -> Path:
         doc.add_paragraph()
     w.p(f"Repositorio: {REPO}", WD_ALIGN_PARAGRAPH.CENTER).runs[0].font.size = Pt(10)
     w.p(f"Aplicación de Streamlit: {app_texto}", WD_ALIGN_PARAGRAPH.CENTER).runs[0].font.size = Pt(10)
+    w.p(f"Video de la presentación: {URL_VIDEO}", WD_ALIGN_PARAGRAPH.CENTER).runs[0].font.size = Pt(10)
 
     # ---------------- Índices (sección nueva con número de página)
     nueva = doc.add_section(WD_SECTION.NEW_PAGE)
@@ -460,6 +463,8 @@ def construir(raiz: Path, url_app: str = "") -> Path:
         "periodo), indicadores clave, los gráficos interactivos, la interpretación (qué muestran los datos, cómo "
         "responden la pregunta, qué decisión podrían apoyar y sus limitaciones) y la tabla descargable en CSV.")
     w.p(app_texto + ".", negrita_inicial="Acceso a la aplicación: ")
+    w.p(f"{URL_VIDEO}. Una copia del video está en el repositorio, en {RUTA_VIDEO}.",
+        negrita_inicial="Video de la presentación (demostración de la aplicación): ")
 
     # ---------------- 9. Resultados y discusión
     w.h("9. Resultados y discusión")
@@ -594,6 +599,7 @@ def construir(raiz: Path, url_app: str = "") -> Path:
         "pandas development team. (2026). pandas documentation. https://pandas.pydata.org/docs/",
         "Plotly Technologies Inc. (s. f.). Plotly Python graphing library. https://plotly.com/python/",
         "Streamlit. (s. f.). Streamlit documentation. https://docs.streamlit.io/",
+        f"Valencia Duque, S. A. (2026). Presentación del proyecto: supervivencia registrada en el Titanic [Video]. Google Drive. {URL_VIDEO}",
         f"Valencia Duque, S. A. (2026). PI3-ADD: Proyecto Integrado III, analítica de datos [Repositorio de código]. GitHub. {REPO}",
     ):
         par = doc.add_paragraph(ref)
